@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./../assets/images/icon/icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./../assets/images/icon/icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./../assets/images/icon/icon.png"
+    />
+    <link rel="manifest" href="./../assets/images/icon/icon.png" />
+    <link
+      rel="mask-icon"
+      href="./../assets/images/icon/icon.png"
+      color="#38bdf8"
+    />
+    <link rel="shortcut icon" href="./../assets/images/icon/icon.png" />
+    <!-- favicon -->
+    <title>Muebles</title>
+    <link rel="stylesheet" href="./../assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/phosphor-icons@1.4.2/src/css/icons.css"
+    />
+
+    <link rel="stylesheet" href="./../assets/css/hamburger.css" />
+    <link rel="stylesheet" href="./../assets/plugins/slick/slick.css" />
+    <link rel="stylesheet" href="./../assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./../assets/css/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <!-- preloader -->
+      <div id="preloader">
+        <div>
+          <h1>Muebles</h1>
+          <div class="rectangles">
+            <div class="rect q"></div>
+            <div class="rect w"></div>
+            <div class="rect e"></div>
+            <div class="rect r"></div>
+          </div>
+          <div class="inscription">
+            <i>Loading</i>
+            <span>...</span>
+          </div>
+        </div>
+      </div>
+      <!-- preloader -->
+      <div class="checkout_process_modal view_cart_modal">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="modal-header">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.875 10H3.125"
+                      stroke="#E85342"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.75 4.375L3.125 10L8.75 15.625"
+                      stroke="#E85342"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <a class="navbar-brand" href="./index.html">
+                  <img src="./../assets/images/logo/logo.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="col-12">
+            <div class="step_status">
+              <span class="step">
+                <div class="box">
+                  <span class="check">
+                    <svg
+                      width="20"
+                      height="14"
+                      viewBox="0 0 20 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.75 2L7.25 12.5L2 7.25"
+                        stroke="white"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <span class="process">
+                    <div class="loader"></div>
+                  </span>
+                </div>
+                <p>Shipping</p>
+              </span>
+              <span class="step">
+                <div class="box">
+                  <span class="check">
+                    <svg
+                      width="20"
+                      height="14"
+                      viewBox="0 0 20 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.75 2L7.25 12.5L2 7.25"
+                        stroke="white"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <span class="process">
+                    <div class="loader"></div>
+                  </span>
+                </div>
+                <p>Delivery</p>
+              </span>
+              <span class="step">
+                <div class="box">
+                  <span class="check">
+                    <svg
+                      width="20"
+                      height="14"
+                      viewBox="0 0 20 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.75 2L7.25 12.5L2 7.25"
+                        stroke="white"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <span class="process">
+                    <div class="loader"></div>
+                  </span>
+                </div>
+                <p>Payment</p>
+              </span>
+              <span class="step">
+                <div class="box">
+                  <span class="check">
+                    <svg
+                      width="20"
+                      height="14"
+                      viewBox="0 0 20 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.75 2L7.25 12.5L2 7.25"
+                        stroke="white"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <span class="process">
+                    <div class="loader"></div>
+                  </span>
+                </div>
+                <p>Complete</p>
+              </span>
+            </div>
+            <div class="tab">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="shipping_address cart-item d-block">
+                    <div class="shipping_address_item">
+                      <div class="address_name">
+                        <input type="radio" name="home" id="home" checked />
+                        <label for="home">Home</label>
+                        <span class="default">Default</span>
+                      </div>
+                      <div class="address_info">
+                        <h4 class="user_name">Nathan C. Collette</h4>
+                        <p class="address">4503 Villa DriveElkhart, IN 46516</p>
+                        <span>574-322-7161</span>
+                      </div>
+                      <div class="cta_btn">
+                        <button class="cta-remove">Remove</button>
+                        <button class="cta-edit">Edit</button>
+                      </div>
+                    </div>
+                    <div class="shipping_address_item">
+                      <div class="address_name">
+                        <input type="radio" name="work" id="work" />
+                        <label for="work">Work</label>
+                      </div>
+                      <div class="address_info">
+                        <h4 class="user_name">Nathan C. Collette</h4>
+                        <p class="address">4503 Villa DriveElkhart, IN 46516</p>
+                        <span>574-322-7161</span>
+                      </div>
+                      <div class="cta_btn">
+                        <button class="cta-remove">Remove</button>
+                        <button class="cta-edit">Edit</button>
+                      </div>
+                    </div>
+                    <div class="cart-item-add-more">
+                      <a href="#">
+                        <span>
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 10L19 10"
+                              stroke="#E85342"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M10 1L9.99931 19"
+                              stroke="#E85342"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+                        Add New Address
+                      </a>
+                    </div>
+                  </div>
+                  <div class="edit_shipping_address d-none">
+                    <form action="">
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="mb-3">
+                            <label for="firstName" class="form-label"
+                              >First Name</label
+                            >
+                            <input
+                              type="text"
+                              id="firstName"
+                              class="form-control"
+                              placeholder="First Name"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="mb-3">
+                            <label for="lastName" class="form-label"
+                              >Last Name</label
+                            >
+                            <input
+                              type="text"
+                              id="lastName"
+                              class="form-control"
+                              placeholder="Last Name"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="mb-3">
+                            <label for="country" class="form-label"
+                              >Country</label
+                            >
+                            <input
+                              type="text"
+                              id="country"
+                              class="form-control"
+                              placeholder="Country"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="mb-3">
+                            <label for="city" class="form-label">City</label>
+                            <input
+                              type="text"
+                              id="city"
+                              class="form-control"
+                              placeholder="City"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="mb-3">
+                            <label for="provience" class="form-label"
+                              >Provience</label
+                            >
+                            <input
+                              type="text"
+                              id="provience"
+                              class="form-control"
+                              placeholder="Provience"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="mb-3">
+                            <label for="zipCode" class="form-label"
+                              >Zip Code</label
+                            >
+                            <input
+                              type="text"
+                              id="zipCode"
+                              class="form-control"
+                              placeholder="Zip Code"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="mb-3">
+                            <label for="address" class="form-label"
+                              >Address</label
+                            >
+                            <input
+                              type="text"
+                              id="address"
+                              class="form-control"
+                              placeholder="Address"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="col-12 d-flex align-items-center justify-content-end gap-2"
+                        >
+                          <button class="btn warning cancel-btn">Cancel</button>
+                          <button class="btn success save-btn">Save</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="cart_footer">
+                    <div class="promocode">
+                      <h4 class="pcode_header">Order Summary</h4>
+                      <div class="promoCodeFeild">
+                        <input
+                          class="couponText"
+                          type="text"
+                          placeholder="Coupen or gift"
+                        />
+                        <button class="promo_apply">Apply</button>
+                      </div>
+                    </div>
+                    <div class="subtotal">
+                      <p class="itemSubtotal">Item Subtotal</p>
+                      <span class="price">$3100.00</span>
+                    </div>
+                    <div class="subtotal">
+                      <p class="itemSubtotal">Taxs</p>
+                      <span class="price">$20.00</span>
+                    </div>
+                    <div class="subtotal">
+                      <p class="itemSubtotal">Estimated Total</p>
+                      <span class="price">$3249.00</span>
+                    </div>
+                  </div>
+                  <button
+                    class="shipping"
+                    type="button"
+                    id="nextBtn"
+                    onclick="nextPrev(1)"
+                  >
+                    Delivery
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="tab">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="shipping_address cart-item">
+                    <div class="shipping_estimate_delivery">
+                      <div class="shipping_estimate_delivery_time">
+                        <h4>Estimated Delivery Time</h4>
+                        <p>Oct 25- Oct 31</p>
+                      </div>
+                      <div class="address_name">
+                        <label class="container"
+                          >I’d like to pick my own date
+                          <input
+                            type="checkbox"
+                            id="myCheck"
+                            onclick="myFunction()"
+                          />
+                          <span class="checkmark"></span>
+                        </label>
+                        <div class="date">
+                          <div
+                            class="custom-date"
+                            id="text"
+                            style="display: none"
+                          >
+                            <input
+                              id="dateofbirth"
+                              class="custom-date-picker"
+                              type="date"
+                              name=""
+                              id=""
+                              placeholder="Date"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="shipping_address_item delivery_method">
+                      <h4 class="heading">Delivery Method</h4>
+                      <div class="address_name">
+                        <input type="radio" name="home" id="shipment" />
+                        <label for="shipment">Drop the shipment</label>
+                      </div>
+                      <div class="address_info">
+                        <p class="address">
+                          Just drop the shipment in your address
+                        </p>
+                      </div>
+                      <div class="address_name">
+                        <input type="radio" name="home" id="setup" />
+                        <label for="setup">Drop and setup</label>
+                      </div>
+                      <div class="address_info">
+                        <p class="address">
+                          Delivery group will remove all bundling, bring item(s)
+                          indoor, and perform light get together when required.
+                          It will charge extra $250
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="cart_footer">
+                    <div class="promocode">
+                      <h4 class="pcode_header">Order Summary</h4>
+                      <div class="promoCodeFeild">
+                        <input
+                          class="couponText"
+                          type="text"
+                          placeholder="Coupen or gift"
+                        />
+                        <button class="promo_apply">Apply</button>
+                      </div>
+                    </div>
+                    <div class="subtotal">
+                      <p class="itemSubtotal">Item Subtotal</p>
+                      <span class="price">$3100.00</span>
+                    </div>
+                    <div class="subtotal">
+                      <p class="itemSubtotal">Taxs</p>
+                      <span class="price">$20.00</span>
+                    </div>
+                    <div class="subtotal">
+                      <p class="itemSubtotal">Estimated Total</p>
+                      <span class="price">$3249.00</span>
+                    </div>
+                  </div>
+                  <button
+                    class="shipping"
+                    type="button"
+                    id="nextBtn"
+                    onclick="nextPrev(1)"
+                  >
+                    Payment
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="tab">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="shipping_address cart-item payment-address">
+                    <div class="shipping_address_item">
+                      <div class="address_name payment">
+                        <div>
+                          <input type="radio" name="paypal" id="paypal" />
+                          <label for="paypal">Payment with paypal</label>
+                        </div>
+                        <span>
+                          <img
+                            src="./../assets/images/payment/paypal.png"
+                            alt=""
+                          />
+                        </span>
+                      </div>
+                      <div class="address_info">
+                        <p class="address">
+                          You will be redirected to PayPal website to complete
+                          your purchase securely.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="shipping_address_item payment_part">
+                      <div class="address_name payment">
+                        <div>
+                          <input
+                            type="radio"
+                            name="credit_debit"
+                            id="credit_debit"
+                            checked
+                          />
+                          <label for="credit_debit">Credit / Debit Card</label>
+                        </div>
+                        <span>
+                          <img
+                            src="./../assets/images/payment/mastercard.png"
+                            alt=""
+                          />
+                          <img
+                            src="./../assets/images/payment/visa.png"
+                            alt=""
+                          />
+                        </span>
+                      </div>
+                      <div class="address_info">
+                        <p class="address">
+                          We support Mastercard, Visa, Amex & American express
+                        </p>
+                      </div>
+                      <div class="cart-item-add-more">
+                        <a href="#" class="add_card">
+                          <span>
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1 10L19 10"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M10 1L9.99931 19"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          Add Card
+                        </a>
+                      </div>
+                    </div>
+                    <div class="shipping_address_item">
+                      <div class="address_name payment">
+                        <div>
+                          <input
+                            type="radio"
+                            name="credit_debit"
+                            id="credit_debit"
+                          />
+                          <label for="credit_debit">Cash on delivery</label>
+                        </div>
+                      </div>
+                      <div class="address_info">
+                        <p class="address">
+                          After delivery confirmation you can pay the amount
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edit_shipping_address edit_card_new d-none">
+                    <form action="">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="mb-3">
+                            <label for="nameCard" class="form-label"
+                              >Name On Card</label
+                            >
+                            <input
+                              type="text"
+                              id="nameCard"
+                              class="form-control"
+                              placeholder="Name On Card"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="mb-3">
+                            <label for="nameCard" class="form-label"
+                              >Card Number</label
+                            >
+                            <input
+                              type="text"
+                              id="nameCard"
+                              class="form-control"
+                              placeholder="Card Number"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="mb-3">
+                            <label for="mm/yy" class="form-label">MM/YY</label>
+                            <input
+                              type="text"
+                              id="mm/yy"
+                              class="form-control"
+                              placeholder="MM/YY"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="mb-3">
+                            <label for="cvv" class="form-label">CVV</label>
+                            <input
+                              type="text"
+                              id="cvv"
+                              class="form-control"
+                              placeholder="CVV"
+                            />
+                          </div>
+                        </div>
+
+                        <div
+                          class="col-12 d-flex align-items-center justify-content-end gap-2"
+                        >
+                          <button class="btn warning card-cancel-btn">
+                            Cancel
+                          </button>
+                          <button class="btn success card-save-btn">
+                            Save
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="cart_footer">
+                    <div class="promocode">
+                      <h4 class="pcode_header">Order Summary</h4>
+                      <div class="promoCodeFeild">
+                        <input
+                          class="couponText"
+                          type="text"
+                          placeholder="Coupen or gift"
+                        />
+                        <button class="promo_apply">Apply</button>
+                      </div>
+                    </div>
+                    <div class="subtotal">
+                      <p class="itemSubtotal">Item Subtotal</p>
+                      <span class="price">$3100.00</span>
+                    </div>
+                    <div class="subtotal">
+                      <p class="itemSubtotal">Taxs</p>
+                      <span class="price">$20.00</span>
+                    </div>
+                    <div class="subtotal">
+                      <p class="itemSubtotal">Estimated Total</p>
+                      <span class="price">$3249.00</span>
+                    </div>
+                  </div>
+                  <button
+                    class="shipping"
+                    type="button"
+                    id="nextBtn"
+                    onclick="nextPrev(1)"
+                  >
+                    Checkout
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="tab">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h3 class="">Your Payment is successfully complete</h3>
+                  <a class="warning px-2 py-1 mt-4" href="./../index.html"
+                    >Back to home</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script
+      type="text/javascript"
+      src="./../assets/js/jquery-3.6.0.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./../assets/js/bootstrap.bundle.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./../assets/plugins/smooth-scroll/smooth-scroll.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./../assets/plugins/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript" src="./../assets/js/hamburger.js"></script>
+    <script
+      type="text/javascript"
+      src="./../assets/js/swiper-bundle.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./../assets/js/multi-step-form.js"
+    ></script>
+    <script type="text/javascript" src="./../assets/js/custom.js"></script>
+    <script type="text/javascript" src="./../assets/js/main.js"></script>
+  </body>
+</html>

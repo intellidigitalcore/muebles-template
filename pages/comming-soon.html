@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./../assets/images/icon/icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./../assets/images/icon/icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./../assets/images/icon/icon.png"
+    />
+    <link rel="manifest" href="./../assets/images/icon/icon.png" />
+    <link
+      rel="mask-icon"
+      href="./../assets/images/icon/icon.png"
+      color="#38bdf8"
+    />
+    <link rel="shortcut icon" href="./../assets/images/icon/icon.png" />
+    <!-- favicon -->
+    <title>Muebles</title>
+    <link rel="stylesheet" href="./../assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/phosphor-icons@1.4.2/src/css/icons.css"
+    />
+
+    <link rel="stylesheet" href="./../assets/css/hamburger.css" />
+    <link rel="stylesheet" href="./../assets/plugins/slick/slick.css" />
+    <link rel="stylesheet" href="./../assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- main body -->
+    <div class="main">
+      <!-- preloader -->
+      <div id="preloader">
+        <div>
+          <h1>Muebles</h1>
+          <div class="rectangles">
+            <div class="rect q"></div>
+            <div class="rect w"></div>
+            <div class="rect e"></div>
+            <div class="rect r"></div>
+          </div>
+          <div class="inscription">
+            <i>Loading</i>
+            <span>...</span>
+          </div>
+        </div>
+      </div>
+      <!-- preloader -->
+      <section class="comming_soon">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <img
+                class="img-fluid"
+                src="./../assets/images/comming-soon/coming-soon.png"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-8">
+              <h2>Coming Soon</h2>
+              <div id="countdown_dashboard">
+                <div class="dash weeks_dash d-none">
+                  <span class="dash_title">weeks</span>
+                  <div class="digit-box">
+                    <div class="digit">0</div>
+                    <div class="digit">0</div>
+                  </div>
+                </div>
+
+                <div class="dash days_dash">
+                  <span class="dash_title">days</span>
+                  <div class="digit-box">
+                    <div class="digit">0</div>
+                    <div class="digit">0</div>
+                  </div>
+                </div>
+
+                <div class="dash hours_dash">
+                  <span class="dash_title">hours</span>
+                  <div class="digit-box">
+                    <div class="digit">0</div>
+                    <div class="digit">0</div>
+                  </div>
+                </div>
+
+                <div class="dash minutes_dash">
+                  <span class="dash_title">minutes</span>
+                  <div class="digit-box">
+                    <div class="digit">0</div>
+                    <div class="digit">0</div>
+                  </div>
+                </div>
+
+                <div class="dash seconds_dash">
+                  <span class="dash_title">seconds</span>
+                  <div class="digit-box">
+                    <div class="digit">0</div>
+                    <div class="digit">0</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- main body -->
+
+    <!-- js -->
+    <script
+      type="text/javascript"
+      src="./../assets/js/jquery-3.6.0.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./../assets/js/bootstrap.bundle.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./../assets/plugins/smooth-scroll/smooth-scroll.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./../assets/plugins/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript" src="./../assets/js/hamburger.js"></script>
+    <script
+      type="text/javascript"
+      src="./../assets/js/swiper-bundle.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./../assets/js/multi-step-form.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./../assets/js/countdown-timer.js"
+    ></script>
+    <script type="text/javascript" src="./../assets/js/custom.js"></script>
+    <script type="text/javascript" src="./../assets/js/main.js"></script>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "474px";
+        document.getElementById("mySidenav").style.right = "0%";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("mySidenav").style.right = "-100%";
+      }
+    </script>
+    <script>
+      function filteropenNav() {
+        document.getElementById("filterSidenav").style.width = "474px";
+        document.getElementById("filterSidenav").style.left = "0%";
+      }
+
+      function filtercloseNav() {
+        document.getElementById("filterSidenav").style.width = "0";
+        document.getElementById("filterSidenav").style.left = "-100%";
+      }
+    </script>
+  </body>
+</html>

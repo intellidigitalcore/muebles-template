@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./../assets/images/icon/icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./../assets/images/icon/icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./../assets/images/icon/icon.png"
+    />
+    <link rel="manifest" href="./../assets/images/icon/icon.png" />
+    <link
+      rel="mask-icon"
+      href="./../assets/images/icon/icon.png"
+      color="#38bdf8"
+    />
+    <link rel="shortcut icon" href="./../assets/images/icon/icon.png" />
+    <!-- favicon -->
+    <title>Muebles</title>
+    <link rel="stylesheet" href="./../assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/phosphor-icons@1.4.2/src/css/icons.css"
+    />
+
+    <link rel="stylesheet" href="./../assets/css/hamburger.css" />
+    <link rel="stylesheet" href="./../assets/plugins/slick/slick.css" />
+    <link rel="stylesheet" href="./../assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- main body -->
+    <div class="main">
+      <!-- preloader -->
+      <div id="preloader">
+        <div>
+          <h1>Muebles</h1>
+          <div class="rectangles">
+            <div class="rect q"></div>
+            <div class="rect w"></div>
+            <div class="rect e"></div>
+            <div class="rect r"></div>
+          </div>
+          <div class="inscription">
+            <i>Loading</i>
+            <span>...</span>
+          </div>
+        </div>
+      </div>
+      <!-- preloader -->
+      <!-- navbar -->
+      <section id="top_navbar" class="">
+        <nav class="navbar navbar-expand-lg navbar-light container-fluid">
+          <div
+            class="row flex-row align-items-center justify-content-between w-100 mx-auto"
+          >
+            <div class="col-lg-3 col-md-6 col-6 py-3">
+              <a class="navbar-brand me-auto" href="./../index.html">
+                <img src="./../assets/images/logo/logo.png" alt="" />
+              </a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-6 py-3">
+              <div href="#" class="search desktop">
+                <input
+                  class="w-100"
+                  type="search"
+                  name=""
+                  id=""
+                  placeholder="Search by name, tag, category"
+                />
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-end w-100 gap-3"
+              >
+                <div href="#" class="search mob_nav">
+                  <i class="ph-magnifying-glass"></i>
+                </div>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <div class="hamburger-icon" id="icon">
+                    <div class="icon-1" id="a"></div>
+                    <div class="icon-2" id="b"></div>
+                    <div class="icon-3" id="c"></div>
+                    <div class="clear"></div>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="desktop py-3">
+                <ul class="navbar-nav justify-content-end w-100">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="ph-heart"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span class="mySidenav" style="cursor: pointer">
+                        <i class="ph-handbag"></i>
+                      </span>
+                    </a>
+
+                    <div id="mySidenav" class="sidenav sideBag">
+                      <div class="sidenav_bag">
+                        <div class="heading">
+                          <h4>In Your Bag</h4>
+                          <a href="" class="closebtn">&times;</a>
+                        </div>
+                        <div class="cart_added">
+                          <div class="cart_added_item">
+                            <div class="img">
+                              <img
+                                class="img-fluid"
+                                src="./../assets/images/cart-item/item.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="title_price">
+                              <div class="cart_title_price">
+                                <h4>
+                                  Muebles Sofa - Blue Performance Fabric with
+                                  customize texture
+                                </h4>
+                                <span class="price"> $1,598 </span>
+                              </div>
+                              <div class="product_cat">
+                                <p>Taylor Flet Gray</p>
+                              </div>
+                              <div class="cart_inc_dec_del">
+                                <div class="input-group">
+                                  <span class="input-group-btn">
+                                    <button
+                                      type="button"
+                                      class="quantity-left-minus"
+                                      data-type="minus"
+                                      data-field=""
+                                    >
+                                      <i class="ph-minus"></i>
+                                    </button>
+                                  </span>
+                                  <input
+                                    type="text"
+                                    id="quantity"
+                                    name="quantity"
+                                    class="form-control input-number"
+                                    value="0"
+                                    min="1"
+                                    max="100"
+                                  />
+                                  <span class="input-group-btn">
+                                    <button
+                                      type="button"
+                                      class="quantity-right-plus"
+                                      data-type="plus"
+                                      data-field=""
+                                    >
+                                      <i class="ph-plus"></i>
+                                    </button>
+                                  </span>
+                                </div>
+                                <div class="cart_del_btn">
+                                  <i class="ph-trash"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="cart_added_item">
+                            <div class="img">
+                              <img
+                                class="img-fluid"
+                                src="./../assets/images/cart-item/item1.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="title_price">
+                              <div class="cart_title_price">
+                                <h4>
+                                  Muebles Sofa - gray colored shifon texture
+                                  with non-allergic
+                                </h4>
+                                <span class="price"> $1,598 </span>
+                              </div>
+                              <div class="product_cat">
+                                <p>Taylor Flet Gray</p>
+                              </div>
+                              <div class="cart_inc_dec_del">
+                                <div class="input-group">
+                                  <span class="input-group-btn">
+                                    <button
+                                      type="button"
+                                      class="quantity-left-minus"
+                                      data-type="minus"
+                                      data-field=""
+                                    >
+                                      <i class="ph-minus"></i>
+                                    </button>
+                                  </span>
+                                  <input
+                                    type="text"
+                                    id="quantity"
+                                    name="quantity"
+                                    class="form-control input-number"
+                                    value="0"
+                                    min="1"
+                                    max="100"
+                                  />
+                                  <span class="input-group-btn">
+                                    <button
+                                      type="button"
+                                      class="quantity-right-plus"
+                                      data-type="plus"
+                                      data-field=""
+                                    >
+                                      <i class="ph-plus"></i>
+                                    </button>
+                                  </span>
+                                </div>
+                                <div class="cart_del_btn">
+                                  <i class="ph-trash"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cart_footer">
+                          <div class="promocode">
+                            <button class="apply">
+                              Apply gift card or promo code +
+                            </button>
+
+                            <div class="promoCodeFeild d-none">
+                              <input
+                                class="couponText"
+                                type="text"
+                                placeholder="Coupen or gift"
+                              />
+                              <button class="promo_apply">Apply</button>
+                            </div>
+                          </div>
+                          <div class="subtotal">
+                            <p class="subtotal">Subtotal</p>
+                            <span class="price">$3100.00</span>
+                          </div>
+                          <div class="subtotal discount d-none">
+                            <p class="subtotal">discount</p>
+                            <span class="price">$30.00</span>
+                          </div>
+                          <div class="btn_part">
+                            <button>View Cart</button>
+                            <button class="checkout">
+                              Checkout - $3100.00
+                            </button>
+                          </div>
+                          <p class="shipping_tax">
+                            Shipping & Taxes Calculated at Checkout
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="ph-user"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="mob_nav py-lg-3">
+                <div
+                  class="collapse navbar-collapse py-3 relative"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav justify-content-center w-100">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Living Room </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Bed Room </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Outdoor </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Dinning </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Kitchen </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Office </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Lights & Lamps </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="desktop">
+                <div
+                  class="collapse navbar-collapse py-3 relative"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav justify-content-center w-100">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Living Room </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Bed Room </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Outdoor </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Dinning </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Kitchen </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Office </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Lights & Lamps </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <!-- navbar -->
+
+      <!-- profile -->
+      <div class="profile checkout_process_modal view_cart_modal">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="profile_nav">
+                <img
+                  class="img-fluid"
+                  src="./../assets/images/profile/profile.png"
+                  alt=""
+                />
+                <h4 class="user_name">{{User Name}}</h4>
+                <p class="user_email">example@email.com</p>
+                <ul class="profile_navbar">
+                  <li class="profile_navbar_item">
+                    <a href="./profile.html" class="profile_navbar_link">
+                      <i class="ph-user"></i>
+                      Profile</a
+                    >
+                  </li>
+                  <li class="profile_navbar_item">
+                    <a
+                      href="./billing-address.html"
+                      class="profile_navbar_link"
+                    >
+                      <i class="ph-map-pin"></i>
+                      Billing Address</a
+                    >
+                  </li>
+                  <li class="profile_navbar_item">
+                    <a href="./payment.html" class="profile_navbar_link">
+                      <i class="ph-cardholder"></i>
+                      Payment Options</a
+                    >
+                  </li>
+                  <li class="profile_navbar_item">
+                    <a href="./track-my-order.html" class="profile_navbar_link">
+                      <span>
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M19.5 6.375H4.5C4.15482 6.375 3.875 6.65482 3.875 7V8.875C3.875 9.22018 4.15482 9.5 4.5 9.5H19.5C19.8452 9.5 20.125 9.22018 20.125 8.875V7C20.125 6.65482 19.8452 6.375 19.5 6.375Z"
+                            stroke="#016A78"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M18.875 9.5V17C18.875 17.1658 18.8092 17.3247 18.6919 17.4419C18.5747 17.5592 18.4158 17.625 18.25 17.625H5.75C5.58424 17.625 5.42527 17.5592 5.30806 17.4419C5.19085 17.3247 5.125 17.1658 5.125 17V9.5"
+                            stroke="#016A78"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M10.125 12.625H13.875"
+                            stroke="#016A78"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </span>
+                      Track My Order</a
+                    >
+                  </li>
+                  <li class="profile_navbar_item">
+                    <a href="./order.html" class="profile_navbar_link">
+                      <span>
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M19.5 6.375H4.5C4.15482 6.375 3.875 6.65482 3.875 7V8.875C3.875 9.22018 4.15482 9.5 4.5 9.5H19.5C19.8452 9.5 20.125 9.22018 20.125 8.875V7C20.125 6.65482 19.8452 6.375 19.5 6.375Z"
+                            stroke="#016A78"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M18.875 9.5V17C18.875 17.1658 18.8092 17.3247 18.6919 17.4419C18.5747 17.5592 18.4158 17.625 18.25 17.625H5.75C5.58424 17.625 5.42527 17.5592 5.30806 17.4419C5.19085 17.3247 5.125 17.1658 5.125 17V9.5"
+                            stroke="#016A78"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M10.125 12.625H13.875"
+                            stroke="#016A78"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </span>
+                      Order</a
+                    >
+                  </li>
+                  <li class="profile_navbar_item">
+                    <a
+                      href="./widhlist.html"
+                      class="profile_navbar_link active"
+                    >
+                      <i class="ph-heart"></i>
+                      My Wishlist</a
+                    >
+                  </li>
+                  <li class="profile_navbar_item">
+                    <a href="./review.html" class="profile_navbar_link">
+                      <i class="ph-pencil-simple"></i>
+                      Reviews</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-9 signup">
+              <div class="container">
+                <div class="profile_body">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Account</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">
+                        Order
+                      </li>
+                    </ol>
+                  </nav>
+                  <h4>Order</h4>
+                  <p>Order Summary</p>
+                  <div class="wishlist">
+                    <div class="row">
+                      <div class="col-lg-6 mb-4">
+                        <div class="wishlist_item">
+                          <div class="d-flex align-items-start gap-3">
+                            <div class="img">
+                              <img
+                                class="img-fluid"
+                                src="./../assets/images/cart-item/item.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="desc">
+                              <h4>
+                                Muebles Sofa - Blue Performance Fabric with
+                                customize texture
+                              </h4>
+                              <p>Taylor Flet Gray</p>
+                              <h2>$1,598</h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mb-4">
+                        <div class="wishlist_item">
+                          <div class="d-flex align-items-start gap-3">
+                            <div class="img">
+                              <img
+                                class="img-fluid"
+                                src="./../assets/images/cart-item/item1.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="desc">
+                              <h4>
+                                Muebles Sofa - Blue Performance Fabric with
+                                customize texture
+                              </h4>
+                              <p>Taylor Flet Gray</p>
+                              <h2>$1,598</h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mb-4">
+                        <div class="wishlist_item">
+                          <div class="d-flex align-items-start gap-3">
+                            <div class="img">
+                              <img
+                                class="img-fluid"
+                                src="./../assets/images/cart-item/item.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="desc">
+                              <h4>
+                                Muebles Sofa - Blue Performance Fabric with
+                                customize texture
+                              </h4>
+                              <p>Taylor Flet Gray</p>
+                              <h2>$1,598</h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- profile -->
+
+      <section class="mobile_nav mob_nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <ul class="mobile_sticky_nav">
+                <li class="">
+                  <a class="active" href="#">
+                    <i class="ph-house"></i>
+                    Home</a
+                  >
+                </li>
+                <li class="">
+                  <a href="#">
+                    <i class="ph-funnel"></i>
+                    Filter</a
+                  >
+                </li>
+                <li class="">
+                  <a class="" href="#">
+                    <i class="ph-heart"></i>
+                    Wishlist</a
+                  >
+                </li>
+                <li class="">
+                  <a href="#">
+                    <i class="ph-handbag"></i>
+                    Cart</a
+                  >
+                </li>
+                <li class="">
+                  <a href="#">
+                    <i class="ph-user"></i>
+                    Account</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- main body -->
+
+    <!-- js -->
+    <script
+      type="text/javascript"
+      src="./../assets/js/jquery-3.6.0.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./../assets/js/bootstrap.bundle.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./../assets/plugins/smooth-scroll/smooth-scroll.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./../assets/plugins/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript" src="./../assets/js/hamburger.js"></script>
+    <script
+      type="text/javascript"
+      src="./../assets/js/swiper-bundle.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./../assets/js/multi-step-form.js"
+    ></script>
+    <script type="text/javascript" src="./../assets/js/custom.js"></script>
+    <script type="text/javascript" src="./../assets/js/main.js"></script>
+  </body>
+</html>

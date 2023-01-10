@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./../assets/images/icon/icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./../assets/images/icon/icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./../assets/images/icon/icon.png"
+    />
+    <link rel="manifest" href="./../assets/images/icon/icon.png" />
+    <link
+      rel="mask-icon"
+      href="./../assets/images/icon/icon.png"
+      color="#38bdf8"
+    />
+    <link rel="shortcut icon" href="./../assets/images/icon/icon.png" />
+    <!-- favicon -->
+    <title>Muebles</title>
+    <link rel="stylesheet" href="./../assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/phosphor-icons@1.4.2/src/css/icons.css"
+    />
+
+    <link rel="stylesheet" href="./../assets/css/hamburger.css" />
+    <link rel="stylesheet" href="./../assets/plugins/slick/slick.css" />
+    <link rel="stylesheet" href="./../assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- main body -->
+    <div class="main">
+      <!-- preloader -->
+      <div id="preloader">
+        <div>
+          <h1>Muebles</h1>
+          <div class="rectangles">
+            <div class="rect q"></div>
+            <div class="rect w"></div>
+            <div class="rect e"></div>
+            <div class="rect r"></div>
+          </div>
+          <div class="inscription">
+            <i>Loading</i>
+            <span>...</span>
+          </div>
+        </div>
+      </div>
+      <!-- preloader -->
+      <!-- navbar -->
+      <section id="top_navbar" class="">
+        <nav class="navbar navbar-expand-lg navbar-light container-fluid">
+          <div
+            class="row flex-row align-items-center justify-content-between w-100 mx-auto"
+          >
+            <div class="col-lg-3 col-md-6 col-6 py-3">
+              <a class="navbar-brand me-auto" href="./../index.html">
+                <img src="./../assets/images/logo/logo.png" alt="" />
+              </a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-6 py-3">
+              <div href="#" class="search desktop">
+                <input
+                  class="w-100"
+                  type="search"
+                  name=""
+                  id=""
+                  placeholder="Search by name, tag, category"
+                />
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-end w-100 gap-3"
+              >
+                <div href="#" class="search mob_nav">
+                  <i class="ph-magnifying-glass"></i>
+                </div>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <div class="hamburger-icon" id="icon">
+                    <div class="icon-1" id="a"></div>
+                    <div class="icon-2" id="b"></div>
+                    <div class="icon-3" id="c"></div>
+                    <div class="clear"></div>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="desktop py-3">
+                <ul class="navbar-nav justify-content-end w-100">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="ph-heart"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span class="mySidenav" style="cursor: pointer">
+                        <i class="ph-handbag"></i>
+                      </span>
+                    </a>
+
+                    <div id="mySidenav" class="sidenav sideBag">
+                      <div class="sidenav_bag">
+                        <div class="heading">
+                          <h4>In Your Bag</h4>
+                          <a href="" class="closebtn">&times;</a>
+                        </div>
+                        <div class="cart_added">
+                          <div class="cart_added_item">
+                            <div class="img">
+                              <img
+                                class="img-fluid"
+                                src="./../assets/images/cart-item/item.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="title_price">
+                              <div class="cart_title_price">
+                                <h4>
+                                  Muebles Sofa - Blue Performance Fabric with
+                                  customize texture
+                                </h4>
+                                <span class="price"> $1,598 </span>
+                              </div>
+                              <div class="product_cat">
+                                <p>Taylor Flet Gray</p>
+                              </div>
+                              <div class="cart_inc_dec_del">
+                                <div class="input-group">
+                                  <span class="input-group-btn">
+                                    <button
+                                      type="button"
+                                      class="quantity-left-minus"
+                                      data-type="minus"
+                                      data-field=""
+                                    >
+                                      <i class="ph-minus"></i>
+                                    </button>
+                                  </span>
+                                  <input
+                                    type="text"
+                                    id="quantity"
+                                    name="quantity"
+                                    class="form-control input-number"
+                                    value="0"
+                                    min="1"
+                                    max="100"
+                                  />
+                                  <span class="input-group-btn">
+                                    <button
+                                      type="button"
+                                      class="quantity-right-plus"
+                                      data-type="plus"
+                                      data-field=""
+                                    >
+                                      <i class="ph-plus"></i>
+                                    </button>
+                                  </span>
+                                </div>
+                                <div class="cart_del_btn">
+                                  <i class="ph-trash"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="cart_added_item">
+                            <div class="img">
+                              <img
+                                class="img-fluid"
+                                src="./../assets/images/cart-item/item1.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="title_price">
+                              <div class="cart_title_price">
+                                <h4>
+                                  Muebles Sofa - gray colored shifon texture
+                                  with non-allergic
+                                </h4>
+                                <span class="price"> $1,598 </span>
+                              </div>
+                              <div class="product_cat">
+                                <p>Taylor Flet Gray</p>
+                              </div>
+                              <div class="cart_inc_dec_del">
+                                <div class="input-group">
+                                  <span class="input-group-btn">
+                                    <button
+                                      type="button"
+                                      class="quantity-left-minus"
+                                      data-type="minus"
+                                      data-field=""
+                                    >
+                                      <i class="ph-minus"></i>
+                                    </button>
+                                  </span>
+                                  <input
+                                    type="text"
+                                    id="quantity"
+                                    name="quantity"
+                                    class="form-control input-number"
+                                    value="0"
+                                    min="1"
+                                    max="100"
+                                  />
+                                  <span class="input-group-btn">
+                                    <button
+                                      type="button"
+                                      class="quantity-right-plus"
+                                      data-type="plus"
+                                      data-field=""
+                                    >
+                                      <i class="ph-plus"></i>
+                                    </button>
+                                  </span>
+                                </div>
+                                <div class="cart_del_btn">
+                                  <i class="ph-trash"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cart_footer">
+                          <div class="promocode">
+                            <button class="apply">
+                              Apply gift card or promo code +
+                            </button>
+
+                            <div class="promoCodeFeild d-none">
+                              <input
+                                class="couponText"
+                                type="text"
+                                placeholder="Coupen or gift"
+                              />
+                              <button class="promo_apply">Apply</button>
+                            </div>
+                          </div>
+                          <div class="subtotal">
+                            <p class="subtotal">Subtotal</p>
+                            <span class="price">$3100.00</span>
+                          </div>
+                          <div class="subtotal discount d-none">
+                            <p class="subtotal">discount</p>
+                            <span class="price">$30.00</span>
+                          </div>
+                          <div class="btn_part">
+                            <button>View Cart</button>
+                            <button class="checkout">
+                              Checkout - $3100.00
+                            </button>
+                          </div>
+                          <p class="shipping_tax">
+                            Shipping & Taxes Calculated at Checkout
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="ph-user"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="mob_nav py-lg-3">
+                <div
+                  class="collapse navbar-collapse py-3 relative"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav justify-content-center w-100">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Living Room </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Bed Room </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Outdoor </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Dinning </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Kitchen </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Office </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Lights & Lamps </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="desktop">
+                <div
+                  class="collapse navbar-collapse py-3 relative"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav justify-content-center w-100">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Living Room </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Bed Room </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Outdoor </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Dinning </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Kitchen </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Office </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Lights & Lamps </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <!-- navbar -->
+
+      <!-- terms & condition -->
+      <div class="terms_condition_hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="heading">Payment Policy</h2>
+              <p class="version">Version 14.123.1</p>
+              <p class="lastUpdate">Last updated May 2022</p>
+              <p class="replaceVersion">
+                Replaces the April 2022 version
+                <a href="#">(see previous version)</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="terms_condition_page">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3">
+              <ul>
+                <li class="">
+                  <a href="./terms_condition.html">Terms & Conditions</a>
+                </li>
+                <li class="">
+                  <a href="./privacy_policy.html">Privacy Policy</a>
+                </li>
+                <li class="active">
+                  <a href="./payment_policy.html">Payment Policy</a>
+                </li>
+                <li class="">
+                  <a href="./exchange_return.html">Exchange & Return</a>
+                </li>
+                <li class="">
+                  <a href="./shipping_policy.html">Shipping Policy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-9">
+              <div class="terms_condition_page_items">
+                <h4>What information do we collect?</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  consectetur orci eu congue malesuada. Aliquam erat leo,
+                  euismod non tellus ac, placerat tincidunt purus. Interdum et
+                  malesuada fames ac ante ipsum primis in faucibus. Duis nibh
+                  metus, elementum congue tincidunt vel, elementum quis lectus.
+                  Cras placerat, urna ac lobortis tincidunt, massa magna
+                  bibendum ipsum, a faucibus neque nibh eu neque. Nam molestie
+                  fermentum orci, eu fermentum lacus vestibulum et.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  consectetur orci eu congue malesuada. Aliquam erat leo,
+                  euismod non tellus ac, placerat tincidunt purus. Interdum et
+                  malesuada fames ac ante ipsum primis in faucibus. Duis nibh
+                  metus, elementum congue tincidunt vel, elementum quis lectus.
+                  Cras placerat, urna ac lobortis tincidunt, massa magna
+                  bibendum ipsum, a faucibus neque nibh eu neque. Nam molestie
+                  fermentum orci, eu fermentum lacus vestibulum et.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  consectetur orci eu congue malesuada. Aliquam erat leo,
+                  euismod non tellus ac, placerat tincidunt purus. Interdum et
+                  malesuada fames ac ante ipsum primis in faucibus. Duis nibh
+                  metus, elementum congue tincidunt vel, elementum quis lectus.
+                  Cras placerat, urna ac lobortis tincidunt, massa magna
+                  bibendum ipsum, a faucibus neque nibh eu neque. Nam molestie
+                  fermentum orci, eu fermentum lacus vestibulum et.
+                </p>
+              </div>
+              <div class="terms_condition_page_items">
+                <h4>Use of Information</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  consectetur orci eu congue malesuada. Aliquam erat leo,
+                  euismod non tellus ac, placerat tincidunt purus. Interdum et
+                  malesuada fames ac ante ipsum primis in faucibus. Duis nibh
+                  metus, elementum congue tincidunt vel, elementum quis lectus.
+                  Cras placerat, urna ac lobortis tincidunt, massa magna
+                  bibendum ipsum, a faucibus neque nibh eu neque. Nam molestie
+                  fermentum orci, eu fermentum lacus vestibulum et.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  consectetur orci eu congue malesuada. Aliquam erat leo,
+                  euismod non tellus ac, placerat tincidunt purus. Interdum et
+                  malesuada fames ac ante ipsum primis in faucibus. Duis nibh
+                  metus, elementum congue tincidunt vel, elementum quis lectus.
+                  Cras placerat, urna ac lobortis tincidunt, massa magna
+                  bibendum ipsum, a faucibus neque nibh eu neque. Nam molestie
+                  fermentum orci, eu fermentum lacus vestibulum et.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  consectetur orci eu congue malesuada. Aliquam erat leo,
+                  euismod non tellus ac, placerat tincidunt purus. Interdum et
+                  malesuada fames ac ante ipsum primis in faucibus. Duis nibh
+                  metus, elementum congue tincidunt vel, elementum quis lectus.
+                  Cras placerat, urna ac lobortis tincidunt, massa magna
+                  bibendum ipsum, a faucibus neque nibh eu neque. Nam molestie
+                  fermentum orci, eu fermentum lacus vestibulum et.
+                </p>
+              </div>
+              <div class="terms_condition_page_items">
+                <h4>Use of Cookies</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  consectetur orci eu congue malesuada. Aliquam erat leo,
+                  euismod non tellus ac, placerat tincidunt purus. Interdum et
+                  malesuada fames ac ante ipsum primis in faucibus. Duis nibh
+                  metus, elementum congue tincidunt vel, elementum quis lectus.
+                  Cras placerat, urna ac lobortis tincidunt, massa magna
+                  bibendum ipsum, a faucibus neque nibh eu neque. Nam molestie
+                  fermentum orci, eu fermentum lacus vestibulum et.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  consectetur orci eu congue malesuada. Aliquam erat leo,
+                  euismod non tellus ac, placerat tincidunt purus. Interdum et
+                  malesuada fames ac ante ipsum primis in faucibus. Duis nibh
+                  metus, elementum congue tincidunt vel, elementum quis lectus.
+                  Cras placerat, urna ac lobortis tincidunt, massa magna
+                  bibendum ipsum, a faucibus neque nibh eu neque. Nam molestie
+                  fermentum orci, eu fermentum lacus vestibulum et.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  consectetur orci eu congue malesuada. Aliquam erat leo,
+                  euismod non tellus ac, placerat tincidunt purus. Interdum et
+                  malesuada fames ac ante ipsum primis in faucibus. Duis nibh
+                  metus, elementum congue tincidunt vel, elementum quis lectus.
+                  Cras placerat, urna ac lobortis tincidunt, massa magna
+                  bibendum ipsum, a faucibus neque nibh eu neque. Nam molestie
+                  fermentum orci, eu fermentum lacus vestibulum et.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- terms & condition -->
+
+      <section class="mobile_nav mob_nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <ul class="mobile_sticky_nav">
+                <li class="">
+                  <a class="active" href="#">
+                    <i class="ph-house"></i>
+                    Home</a
+                  >
+                </li>
+                <li class="">
+                  <a href="#">
+                    <i class="ph-funnel"></i>
+                    Filter</a
+                  >
+                </li>
+                <li class="">
+                  <a class="" href="#">
+                    <i class="ph-heart"></i>
+                    Wishlist</a
+                  >
+                </li>
+                <li class="">
+                  <a href="#">
+                    <i class="ph-handbag"></i>
+                    Cart</a
+                  >
+                </li>
+                <li class="">
+                  <a href="#">
+                    <i class="ph-user"></i>
+                    Account</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- main body -->
+
+    <!-- js -->
+    <script
+      type="text/javascript"
+      src="./../assets/js/jquery-3.6.0.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./../assets/js/bootstrap.bundle.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./../assets/plugins/smooth-scroll/smooth-scroll.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./../assets/plugins/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript" src="./../assets/js/hamburger.js"></script>
+    <script
+      type="text/javascript"
+      src="./../assets/js/swiper-bundle.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./../assets/js/multi-step-form.js"
+    ></script>
+    <script type="text/javascript" src="./../assets/js/custom.js"></script>
+    <script type="text/javascript" src="./../assets/js/main.js"></script>
+  </body>
+</html>
