@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
   // prelaoder
   //Maruf al Bashir Reza
   $(window).on("load", function () {
@@ -51,7 +50,6 @@ $(document).ready(function () {
   });
 
   //  testimonial slider
-
 
   // cart sidebar section
   var replaceBtn = document.querySelector(".apply");
@@ -158,12 +156,11 @@ $(document).ready(function () {
     $(".track_my_order").addClass("d-none");
   });
 
-
   // texture item selector
-  $(".product-texture-item").click(function(){
-    console.log('click');
-    $(this).addClass('active')
-  })
+  $(".product-texture-item").click(function () {
+    console.log("click");
+    $(this).addClass("active");
+  });
 
   const stars = document.querySelectorAll(".stars i");
   const starsNone = document.querySelector(".rating-box");
@@ -225,9 +222,6 @@ $(document).ready(function () {
   });
   // sticky nav
 
-  
-
-
 
 });
 
@@ -242,33 +236,62 @@ function myFunction() {
 }
 
 // increase & decrease btn
-$(function() {
-	$('[data-decrease]').click(decrease);
-	$('[data-increase]').click(increase);
-	$('[data-value]').change(valueChange);
+$(function () {
+  $("[data-decrease]").click(decrease);
+  $("[data-increase]").click(increase);
+  $("[data-value]").change(valueChange);
 });
 
 function decrease() {
-	var value = $(this).parent().find('[data-value]').val();
-	if(value > 1) {
-		value--;
-		$(this).parent().find('[data-value]').val(value);
-	}
+  var value = $(this).parent().find("[data-value]").val();
+  if (value > 1) {
+    value--;
+    $(this).parent().find("[data-value]").val(value);
+  }
 }
 
 function increase() {
-	var value = $(this).parent().find('[data-value]').val();
-	if(value < 100) {
-		value++;
-		$(this).parent().find('[data-value]').val(value);
-	}
+  var value = $(this).parent().find("[data-value]").val();
+  if (value < 100) {
+    value++;
+    $(this).parent().find("[data-value]").val(value);
+  }
 }
 
 function valueChange() {
-	var value = $(this).val();
-	if(value == undefined || isNaN(value) == true || value <= 0) {
-		$(this).val(1);
-	} else if(value >= 101) {
-		$(this).val(100);
-	}
+  var value = $(this).val();
+  if (value == undefined || isNaN(value) == true || value <= 0) {
+    $(this).val(1);
+  } else if (value >= 101) {
+    $(this).val(100);
+  }
+}
+
+
+// scroll to top
+
+//Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+scrollFunction();
+};
+
+function scrollFunction() {
+if (
+document.body.scrollTop > 20 ||
+document.documentElement.scrollTop > 20
+) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
 }

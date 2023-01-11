@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -277,6 +277,15 @@ button:focus-visible {
   }
 }
 /* preloader */
+
+/* scroll to top */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+/* scroll to top */
 
 /* common css */
 
@@ -664,13 +673,16 @@ button:focus-visible {
 .sidenav .cart_footer .btn_part button:focus {
   box-shadow: none;
 }
-.sidenav .cart_footer .btn_part button {
-}
-.sidenav .cart_footer .btn_part button {
-}
-.sidenav .cart_footer .btn_part button.checkout {
+
+.sidenav .cart_footer .btn_part .checkout {
   background-color: var(--Primary);
   color: var(--Background-Color);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 .sidenav .cart_footer .shipping_tax {
   font-weight: 400;
@@ -1028,6 +1040,7 @@ button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Orbitron", sans-serif;
 }
 .comming_soon h2 {
   font-weight: 700;
@@ -1890,7 +1903,7 @@ button:focus-visible {
 /*single product slider modal */
 
 /*view cart Modal */
-.view_cart_modal .modal-header button {
+.view_cart_modal .modal-header .prevBtn {
   background: transparent;
   position: absolute;
   left: 1%;
@@ -1899,6 +1912,9 @@ button:focus-visible {
 .view_cart_modal .modal-header a {
   text-align: center;
   margin: 0 auto;
+}
+.view_cart_modal .modal-body {
+  padding-top: 10%;
 }
 .view_cart_modal .cart-item .cart_added_item {
   background-color: var(--Background-Color);
@@ -1976,7 +1992,6 @@ button:focus-visible {
   .title_price
   .cart_inc_dec_del
   .input-group
-  .input-group-btn
   button {
   border: 1px solid rgba(1, 106, 120, 0.2);
   border-radius: 4px;
@@ -1993,6 +2008,15 @@ button:focus-visible {
   .title_price
   .cart_inc_dec_del
   .input-group
+  i {
+  color: var(--Secondary);
+}
+.view_cart_modal
+  .cart-item
+  .cart_added_item
+  .title_price
+  .cart_inc_dec_del
+  .input-group
   .input-number {
   padding: 0px;
   border: 0px;
@@ -2002,6 +2026,7 @@ button:focus-visible {
   font-size: 18px;
   line-height: 23px;
   color: var(--Text);
+  background-color: transparent;
 }
 .view_cart_modal
   .cart-item
@@ -2017,6 +2042,7 @@ button:focus-visible {
   border: 0px;
   background-color: transparent;
 }
+
 .view_cart_modal .cart-item .cart-item-add-more a {
   display: flex;
   align-items: center;
@@ -2085,6 +2111,7 @@ button:focus-visible {
 .view_cart_modal .cart_footer .shipping_tax {
   text-align: center;
 }
+
 .view_cart_modal .shipping {
   background: var(--Primary);
   border-radius: 8px;
@@ -3741,12 +3768,6 @@ button:focus-visible {
   font-size: 16px;
   line-height: 24px;
   color: #77787c;
-}
-.provide_best .provide_best_desc {
-}
-.provide_best .provide_best_desc {
-}
-.provide_best .provide_best_desc {
 }
 
 /* about_page */

@@ -249,20 +249,18 @@
                             <span class="price">$30.00</span>
                           </div>
                           <div class="btn_part">
-                            <button
-                              class="btn btn-primary"
-                              data-bs-toggle="modal"
-                              href="#staticBackdrop"
+                            <a
+                              class="btn success-outliine w-100 view_cart py-2"
+                              href="./pages/view-cart.html"
                             >
                               View Cart
-                            </button>
-                            <button
+                            </a>
+                            <a
+                              href="./pages/checkOutProcess.html"
                               class="checkout"
-                              data-bs-toggle="modal"
-                              href="#checkout_process_modal"
                             >
                               Checkout - $3100.00
-                            </button>
+                            </a>
                           </div>
                           <p class="shipping_tax">
                             Shipping & Taxes Calculated at Checkout
@@ -1245,239 +1243,15 @@
     </div>
     <!-- main body -->
 
-    <!-- view cart Modal -->
-
-    <div
-      class="modal fade view_cart_modal"
-      id="staticBackdrop"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
-      aria-hidden="true"
+    <!-- scroll top -->
+    <button
+      type="button"
+      class="btn btn-danger btn-floating btn-lg"
+      id="btn-back-to-top"
     >
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" data-bs-dismiss="modal" aria-label="Close">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16.875 10H3.125"
-                  stroke="#E85342"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M8.75 4.375L3.125 10L8.75 15.625"
-                  stroke="#E85342"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
-            <a class="navbar-brand" href="./index.html">
-              <img src="./assets/images/logo/logo.png" alt="" />
-            </a>
-          </div>
-          <div class="modal-body">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8">
-                  <div class="cart-item">
-                    <div class="cart_added_item">
-                      <div class="img">
-                        <img
-                          class="img-fluid"
-                          src="./assets/images/cart-item/item.png"
-                          alt=""
-                        />
-                      </div>
-                      <div class="title_price">
-                        <div class="cart_title_price">
-                          <h4>
-                            Muebles Sofa - Blue Performance Fabric with
-                            customize texture
-                          </h4>
-                          <span class="price"> $1,598 </span>
-                        </div>
-                        <div class="product_cat">
-                          <p>Taylor Flet Gray</p>
-                        </div>
-                        <div class="cart_inc_dec_del">
-                          <div class="input-group">
-                            <span class="input-group-btn">
-                              <button
-                                type="button"
-                                class="quantity-left-minus"
-                                data-type="minus"
-                                data-field=""
-                              >
-                                <i class="ph-minus"></i>
-                              </button>
-                            </span>
-                            <input
-                              type="text"
-                              id="quantity"
-                              name="quantity"
-                              class="form-control input-number"
-                              value="0"
-                              min="1"
-                              max="100"
-                            />
-                            <span class="input-group-btn">
-                              <button
-                                type="button"
-                                class="quantity-right-plus"
-                                data-type="plus"
-                                data-field=""
-                              >
-                                <i class="ph-plus"></i>
-                              </button>
-                            </span>
-                          </div>
-                          <div class="cart_del_btn">
-                            <button>Remove</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cart_added_item">
-                      <div class="img">
-                        <img
-                          class="img-fluid"
-                          src="./assets/images/cart-item/item1.png"
-                          alt=""
-                        />
-                      </div>
-                      <div class="title_price">
-                        <div class="cart_title_price">
-                          <h4>
-                            Muebles Sofa - Blue Performance Fabric with
-                            customize texture
-                          </h4>
-                          <span class="price"> $1,598 </span>
-                        </div>
-                        <div class="product_cat">
-                          <p>Taylor Flet Gray</p>
-                        </div>
-                        <div class="cart_inc_dec_del">
-                          <div class="input-group">
-                            <span class="input-group-btn">
-                              <button
-                                type="button"
-                                class="quantity-left-minus"
-                                data-type="minus"
-                                data-field=""
-                              >
-                                <i class="ph-minus"></i>
-                              </button>
-                            </span>
-                            <input
-                              type="text"
-                              id="quantity"
-                              name="quantity"
-                              class="form-control input-number"
-                              value="0"
-                              min="1"
-                              max="100"
-                            />
-                            <span class="input-group-btn">
-                              <button
-                                type="button"
-                                class="quantity-right-plus"
-                                data-type="plus"
-                                data-field=""
-                              >
-                                <i class="ph-plus"></i>
-                              </button>
-                            </span>
-                          </div>
-                          <div class="cart_del_btn">
-                            <button>Remove</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cart-item-add-more">
-                      <a href="./pages/shop-all-product.html">
-                        <span>
-                          <svg
-                            width="20"
-                            height="20"
-                            viewBox="0 0 20 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M1 10L19 10"
-                              stroke="#E85342"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                            <path
-                              d="M10 1L9.99931 19"
-                              stroke="#E85342"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
-                        </span>
-                        Add More
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="cart_footer">
-                    <div class="promocode">
-                      <h4 class="pcode_header">Order Summary</h4>
-                      <div class="promoCodeFeild">
-                        <input
-                          class="couponText"
-                          type="text"
-                          placeholder="Coupen or gift"
-                        />
-                        <button class="promo_apply">Apply</button>
-                      </div>
-                    </div>
-                    <div class="subtotal">
-                      <p class="itemSubtotal">Item Subtotal</p>
-                      <span class="price">$3100.00</span>
-                    </div>
-                    <div class="subtotal">
-                      <p class="itemSubtotal">Taxs</p>
-                      <span class="price">$20.00</span>
-                    </div>
-                    <div class="subtotal">
-                      <p class="itemSubtotal">Estimated Total</p>
-                      <span class="price">$3249.00</span>
-                    </div>
-                    <p class="shipping_tax">
-                      Shipping Charge Calculated at Shipping Section
-                    </p>
-                  </div>
-                  <a
-                    href="./pages/checkOutProcess.html"
-                    class="shipping d-block"
-                    >Shipping</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <i class="ph-arrow-up"></i>
+    </button>
+    <!-- scroll top -->
 
     <!-- js -->
     <script src="./assets/js/jquery-3.6.0.js"></script>

@@ -262,7 +262,7 @@
                     </div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="./profile.html">
                       <i class="ph-user"></i>
                     </a>
                   </li>
@@ -585,8 +585,16 @@
                     <div class="shipping_address_item">
                       <div class="address_name payment">
                         <div>
-                          <input type="radio" name="paypal" id="paypal" />
-                          <label for="paypal">Payment with paypal</label>
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios"
+                            id="paypal"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="paypal">
+                            Payment with paypal
+                          </label>
                         </div>
                         <span>
                           <img
@@ -606,12 +614,16 @@
                       <div class="address_name payment">
                         <div>
                           <input
+                            class="form-check-input"
                             type="radio"
-                            name="credit_debit"
+                            name="exampleRadios"
                             id="credit_debit"
+                            value="option1"
                             checked
                           />
-                          <label for="credit_debit">Credit / Debit Card</label>
+                          <label class="form-check-label" for="credit_debit">
+                            Credit / Debit Card
+                          </label>
                         </div>
                         <span>
                           <img
@@ -663,11 +675,15 @@
                       <div class="address_name payment">
                         <div>
                           <input
+                            class="form-check-input"
                             type="radio"
-                            name="credit_debit"
+                            name="exampleRadios"
                             id="credit_debit"
+                            value="option1"
                           />
-                          <label for="credit_debit">Cash on delivery</label>
+                          <label class="form-check-label" for="credit_debit">
+                            Cash on delivery
+                          </label>
                         </div>
                       </div>
                       <div class="address_info">
@@ -782,7 +798,7 @@
                   >
                 </li>
                 <li class="">
-                  <a href="#">
+                  <a href="./profile.html">
                     <i class="ph-user"></i>
                     Account</a
                   >
@@ -794,6 +810,16 @@
       </section>
     </div>
     <!-- main body -->
+
+    <!-- scroll top -->
+    <button
+      type="button"
+      class="btn btn-danger btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
+      <i class="ph-arrow-up"></i>
+    </button>
+    <!-- scroll top -->
 
     <!-- js -->
     <script
