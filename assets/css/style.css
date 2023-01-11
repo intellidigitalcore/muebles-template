@@ -277,6 +277,7 @@ button:focus-visible {
   }
 }
 /* preloader */
+
 /* common css */
 
 /* navbar */
@@ -508,7 +509,6 @@ button:focus-visible {
   .title_price
   .cart_inc_dec_del
   .input-group
-  .input-group-btn
   button {
   width: 24px;
   height: 24px;
@@ -522,7 +522,6 @@ button:focus-visible {
   .title_price
   .cart_inc_dec_del
   .input-group
-  .input-group-btn
   button
   i {
   font-weight: 600 !important;
@@ -546,6 +545,7 @@ button:focus-visible {
   color: var(--Text);
   border: 0px;
   margin: 0 1px;
+  background-color: transparent;
 }
 .sidenav
   .cart_added

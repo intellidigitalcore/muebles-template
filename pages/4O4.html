@@ -46,15 +46,21 @@
     <!-- main body -->
     <div class="main">
       <!-- preloader -->
-      <!-- <section class="prelaoder">
-        <div class="frame">
-          <div class="center">
-            <div class="dot-1"></div>
-            <div class="dot-2"></div>
-            <div class="dot-3"></div>
+      <div id="preloader">
+        <div>
+          <h1>Muebles</h1>
+          <div class="rectangles">
+            <div class="rect q"></div>
+            <div class="rect w"></div>
+            <div class="rect e"></div>
+            <div class="rect r"></div>
+          </div>
+          <div class="inscription">
+            <i>Loading</i>
+            <span>...</span>
           </div>
         </div>
-      </section> -->
+      </div>
       <!-- preloader -->
       <!-- navbar -->
       <section id="top_navbar" class="">
@@ -112,167 +118,148 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">
-                      <span style="cursor: pointer" onclick="openNav()">
+                      <span class="mySidenav" style="cursor: pointer">
                         <i class="ph-handbag"></i>
                       </span>
                     </a>
 
-                    <div id="mySidenav" class="sidenav">
-                      <div class="heading">
-                        <h4>In Your Bag</h4>
-                        <a
-                          href="javascript:void(0)"
-                          class="closebtn"
-                          onclick="closeNav()"
-                          >&times;</a
-                        >
-                      </div>
-                      <div class="cart_added">
-                        <div class="cart_added_item">
-                          <div class="img">
-                            <img
-                              class="img-fluid"
-                              src="./../assets/images/cart-item/item.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="title_price">
-                            <div class="cart_title_price">
-                              <h4>
-                                Muebles Sofa - Blue Performance Fabric with
-                                customize texture
-                              </h4>
-                              <span class="price"> $1,598 </span>
+                    <div id="mySidenav" class="sidenav sideBag">
+                      <div class="sidenav_bag">
+                        <div class="heading">
+                          <h4>In Your Bag</h4>
+                          <span class="closebtn" style="cursor: pointer"
+                            >&times;</span
+                          >
+                        </div>
+                        <div class="cart_added">
+                          <div class="cart_added_item">
+                            <div class="img">
+                              <img
+                                class="img-fluid"
+                                src="./../assets/images/cart-item/item.png"
+                                alt=""
+                              />
                             </div>
-                            <div class="product_cat">
-                              <p>Taylor Flet Gray</p>
-                            </div>
-                            <div class="cart_inc_dec_del">
-                              <div class="input-group">
-                                <span class="input-group-btn">
+                            <div class="title_price">
+                              <div class="cart_title_price">
+                                <h4>
+                                  Muebles Sofa - Blue Performance Fabric with
+                                  customize texture
+                                </h4>
+                                <span class="price"> $1,598 </span>
+                              </div>
+                              <div class="product_cat">
+                                <p>Taylor Flet Gray</p>
+                              </div>
+                              <div class="cart_inc_dec_del">
+                                <div class="input-group">
                                   <button
-                                    type="button"
+                                    data-decrease
                                     class="quantity-left-minus"
-                                    data-type="minus"
-                                    data-field=""
                                   >
                                     <i class="ph-minus"></i>
                                   </button>
-                                </span>
-                                <input
-                                  type="text"
-                                  id="quantity"
-                                  name="quantity"
-                                  class="form-control input-number"
-                                  value="0"
-                                  min="1"
-                                  max="100"
-                                />
-                                <span class="input-group-btn">
+                                  <input
+                                    class="form-control input-number"
+                                    data-value
+                                    type="text"
+                                    value="0"
+                                    disabled
+                                  />
                                   <button
-                                    type="button"
+                                    data-increase
                                     class="quantity-right-plus"
-                                    data-type="plus"
-                                    data-field=""
                                   >
                                     <i class="ph-plus"></i>
                                   </button>
-                                </span>
+                                </div>
+                                <div class="cart_del_btn">
+                                  <i class="ph-trash"></i>
+                                </div>
                               </div>
-                              <div class="cart_del_btn">
-                                <i class="ph-trash"></i>
+                            </div>
+                          </div>
+                          <div class="cart_added_item">
+                            <div class="img">
+                              <img
+                                class="img-fluid"
+                                src="./../assets/images/cart-item/item1.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="title_price">
+                              <div class="cart_title_price">
+                                <h4>
+                                  Muebles Sofa - gray colored shifon texture
+                                  with non-allergic
+                                </h4>
+                                <span class="price"> $1,598 </span>
+                              </div>
+                              <div class="product_cat">
+                                <p>Taylor Flet Gray</p>
+                              </div>
+                              <div class="cart_inc_dec_del">
+                                <div class="input-group">
+                                  <button
+                                    data-decrease
+                                    class="quantity-left-minus"
+                                  >
+                                    <i class="ph-minus"></i>
+                                  </button>
+                                  <input
+                                    class="form-control input-number"
+                                    data-value
+                                    type="text"
+                                    value="0"
+                                    disabled
+                                  />
+                                  <button
+                                    data-increase
+                                    class="quantity-right-plus"
+                                  >
+                                    <i class="ph-plus"></i>
+                                  </button>
+                                </div>
+                                <div class="cart_del_btn">
+                                  <i class="ph-trash"></i>
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="cart_added_item">
-                          <div class="img">
-                            <img
-                              class="img-fluid"
-                              src="./../assets/images/cart-item/item1.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="title_price">
-                            <div class="cart_title_price">
-                              <h4>
-                                Muebles Sofa - gray colored shifon texture with
-                                non-allergic
-                              </h4>
-                              <span class="price"> $1,598 </span>
-                            </div>
-                            <div class="product_cat">
-                              <p>Taylor Flet Gray</p>
-                            </div>
-                            <div class="cart_inc_dec_del">
-                              <div class="input-group">
-                                <span class="input-group-btn">
-                                  <button
-                                    type="button"
-                                    class="quantity-left-minus"
-                                    data-type="minus"
-                                    data-field=""
-                                  >
-                                    <i class="ph-minus"></i>
-                                  </button>
-                                </span>
-                                <input
-                                  type="text"
-                                  id="quantity"
-                                  name="quantity"
-                                  class="form-control input-number"
-                                  value="0"
-                                  min="1"
-                                  max="100"
-                                />
-                                <span class="input-group-btn">
-                                  <button
-                                    type="button"
-                                    class="quantity-right-plus"
-                                    data-type="plus"
-                                    data-field=""
-                                  >
-                                    <i class="ph-plus"></i>
-                                  </button>
-                                </span>
-                              </div>
-                              <div class="cart_del_btn">
-                                <i class="ph-trash"></i>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="cart_footer">
-                        <div class="promocode">
-                          <button class="apply">
-                            Apply gift card or promo code +
-                          </button>
+                        <div class="cart_footer">
+                          <div class="promocode">
+                            <button class="apply">
+                              Apply gift card or promo code +
+                            </button>
 
-                          <div class="promoCodeFeild d-none">
-                            <input
-                              class="couponText"
-                              type="text"
-                              placeholder="Coupen or gift"
-                            />
-                            <button class="promo_apply">Apply</button>
+                            <div class="promoCodeFeild d-none">
+                              <input
+                                class="couponText"
+                                type="text"
+                                placeholder="Coupen or gift"
+                              />
+                              <button class="promo_apply">Apply</button>
+                            </div>
                           </div>
+                          <div class="subtotal">
+                            <p class="subtotal">Subtotal</p>
+                            <span class="price">$3100.00</span>
+                          </div>
+                          <div class="subtotal discount d-none">
+                            <p class="subtotal">discount</p>
+                            <span class="price">$30.00</span>
+                          </div>
+                          <div class="btn_part">
+                            <button>View Cart</button>
+                            <button class="checkout">
+                              Checkout - $3100.00
+                            </button>
+                          </div>
+                          <p class="shipping_tax">
+                            Shipping & Taxes Calculated at Checkout
+                          </p>
                         </div>
-                        <div class="subtotal">
-                          <p class="subtotal">Subtotal</p>
-                          <span class="price">$3100.00</span>
-                        </div>
-                        <div class="subtotal discount d-none">
-                          <p class="subtotal">discount</p>
-                          <span class="price">$30.00</span>
-                        </div>
-                        <div class="btn_part">
-                          <button>View Cart</button>
-                          <button class="checkout">Checkout - $3100.00</button>
-                        </div>
-                        <p class="shipping_tax">
-                          Shipping & Taxes Calculated at Checkout
-                        </p>
                       </div>
                     </div>
                   </li>
@@ -292,25 +279,39 @@
                 >
                   <ul class="navbar-nav justify-content-center w-100">
                     <li class="nav-item">
-                      <a class="nav-link" href="#"> Living Room </a>
+                      <a class="nav-link" href="./pages/shop-all-product.html">
+                        Living Room
+                      </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"> Bed Room </a>
+                      <a class="nav-link" href="./pages/shop-all-product.html">
+                        Bed Room
+                      </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"> Outdoor </a>
+                      <a class="nav-link" href="./pages/shop-all-product.html">
+                        Outdoor
+                      </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"> Dinning </a>
+                      <a class="nav-link" href="./pages/shop-all-product.html">
+                        Dinning
+                      </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"> Kitchen </a>
+                      <a class="nav-link" href="./pages/shop-all-product.html">
+                        Kitchen
+                      </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"> Office </a>
+                      <a class="nav-link" href="./pages/shop-all-product.html">
+                        Office
+                      </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"> Lights & Lamps </a>
+                      <a class="nav-link" href="./pages/shop-all-product.html">
+                        Lights & Lamps
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -322,25 +323,39 @@
                 >
                   <ul class="navbar-nav justify-content-center w-100">
                     <li class="nav-item">
-                      <a class="nav-link" href="#"> Living Room </a>
+                      <a class="nav-link" href="./pages/shop-all-product.html">
+                        Living Room
+                      </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"> Bed Room </a>
+                      <a class="nav-link" href="./pages/shop-all-product.html">
+                        Bed Room
+                      </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"> Outdoor </a>
+                      <a class="nav-link" href="./pages/shop-all-product.html">
+                        Outdoor
+                      </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"> Dinning </a>
+                      <a class="nav-link" href="./pages/shop-all-product.html">
+                        Dinning
+                      </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"> Kitchen </a>
+                      <a class="nav-link" href="./pages/shop-all-product.html">
+                        Kitchen
+                      </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"> Office </a>
+                      <a class="nav-link" href="./pages/shop-all-product.html">
+                        Office
+                      </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"> Lights & Lamps </a>
+                      <a class="nav-link" href="./pages/shop-all-product.html">
+                        Lights & Lamps
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -446,28 +461,5 @@
     ></script>
     <script type="text/javascript" src="./../assets/js/custom.js"></script>
     <script type="text/javascript" src="./../assets/js/main.js"></script>
-
-    <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "474px";
-        document.getElementById("mySidenav").style.right = "0%";
-      }
-
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("mySidenav").style.right = "-100%";
-      }
-    </script>
-    <script>
-      function filteropenNav() {
-        document.getElementById("filterSidenav").style.width = "474px";
-        document.getElementById("filterSidenav").style.left = "0%";
-      }
-
-      function filtercloseNav() {
-        document.getElementById("filterSidenav").style.width = "0";
-        document.getElementById("filterSidenav").style.left = "-100%";
-      }
-    </script>
   </body>
 </html>

@@ -152,35 +152,25 @@
                               </div>
                               <div class="cart_inc_dec_del">
                                 <div class="input-group">
-                                  <span class="input-group-btn">
-                                    <button
-                                      type="button"
-                                      class="quantity-left-minus"
-                                      data-type="minus"
-                                      data-field=""
-                                    >
-                                      <i class="ph-minus"></i>
-                                    </button>
-                                  </span>
+                                  <button
+                                    data-decrease
+                                    class="quantity-left-minus"
+                                  >
+                                    <i class="ph-minus"></i>
+                                  </button>
                                   <input
-                                    type="text"
-                                    id="quantity"
-                                    name="quantity"
                                     class="form-control input-number"
+                                    data-value
+                                    type="text"
                                     value="0"
-                                    min="1"
-                                    max="100"
+                                    disabled
                                   />
-                                  <span class="input-group-btn">
-                                    <button
-                                      type="button"
-                                      class="quantity-right-plus"
-                                      data-type="plus"
-                                      data-field=""
-                                    >
-                                      <i class="ph-plus"></i>
-                                    </button>
-                                  </span>
+                                  <button
+                                    data-increase
+                                    class="quantity-right-plus"
+                                  >
+                                    <i class="ph-plus"></i>
+                                  </button>
                                 </div>
                                 <div class="cart_del_btn">
                                   <i class="ph-trash"></i>
@@ -209,35 +199,25 @@
                               </div>
                               <div class="cart_inc_dec_del">
                                 <div class="input-group">
-                                  <span class="input-group-btn">
-                                    <button
-                                      type="button"
-                                      class="quantity-left-minus"
-                                      data-type="minus"
-                                      data-field=""
-                                    >
-                                      <i class="ph-minus"></i>
-                                    </button>
-                                  </span>
+                                  <button
+                                    data-decrease
+                                    class="quantity-left-minus"
+                                  >
+                                    <i class="ph-minus"></i>
+                                  </button>
                                   <input
-                                    type="text"
-                                    id="quantity"
-                                    name="quantity"
                                     class="form-control input-number"
+                                    data-value
+                                    type="text"
                                     value="0"
-                                    min="1"
-                                    max="100"
+                                    disabled
                                   />
-                                  <span class="input-group-btn">
-                                    <button
-                                      type="button"
-                                      class="quantity-right-plus"
-                                      data-type="plus"
-                                      data-field=""
-                                    >
-                                      <i class="ph-plus"></i>
-                                    </button>
-                                  </span>
+                                  <button
+                                    data-increase
+                                    class="quantity-right-plus"
+                                  >
+                                    <i class="ph-plus"></i>
+                                  </button>
                                 </div>
                                 <div class="cart_del_btn">
                                   <i class="ph-trash"></i>
@@ -1427,7 +1407,7 @@
                       </div>
                     </div>
                     <div class="cart-item-add-more">
-                      <a href="#">
+                      <a href="./pages/shop-all-product.html">
                         <span>
                           <svg
                             width="20"
@@ -1486,353 +1466,11 @@
                       Shipping Charge Calculated at Shipping Section
                     </p>
                   </div>
-                  <button class="shipping">Shipping</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- shipping process Modal -->
-    <div
-      class="modal fade checkout_process_modal view_cart_modal"
-      id="checkout_process_modal"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" data-bs-dismiss="modal" aria-label="Close">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16.875 10H3.125"
-                  stroke="#E85342"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M8.75 4.375L3.125 10L8.75 15.625"
-                  stroke="#E85342"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
-            <a class="navbar-brand" href="./index.html">
-              <img src="./assets/images/logo/logo.png" alt="" />
-            </a>
-          </div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-lg-12">
-                  <form id="regForm" action="">
-                    <!-- Circles which indicates the steps of the form: -->
-                    <div class="step_status">
-                      <span class="step">
-                        <div class="box">
-                          <span class="check">
-                            <svg
-                              width="20"
-                              height="14"
-                              viewBox="0 0 20 14"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M17.75 2L7.25 12.5L2 7.25"
-                                stroke="white"
-                                stroke-width="3"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                            </svg>
-                          </span>
-                          <span class="process">
-                            <svg
-                              width="21"
-                              height="20"
-                              viewBox="0 0 21 20"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M19.5 10C20.0523 10 20.5052 9.55114 20.4501 9.00162C20.2261 6.76925 19.2561 4.66593 17.6813 3.04087C15.8734 1.17534 13.4106 0.0865324 10.8141 0.00493439C8.21761 -0.0766636 5.69127 0.855354 3.76987 2.60369C1.84848 4.35202 0.682848 6.77945 0.519733 9.3721C0.356617 11.9647 1.20882 14.5191 2.89594 16.4945C4.58306 18.4698 6.97267 19.7111 9.55892 19.9556C12.1452 20.2001 14.725 19.4285 16.7524 17.8043C18.5185 16.3894 19.7445 14.4243 20.2465 12.2376C20.37 11.6993 19.977 11.1972 19.429 11.128V11.128C18.8811 11.0588 18.387 11.4494 18.25 11.9844C17.8221 13.6557 16.8623 15.1536 15.5019 16.2434C13.88 17.5428 11.8161 18.1601 9.74713 17.9645C7.67814 17.7689 5.76645 16.7759 4.41675 15.1956C3.06706 13.6153 2.38529 11.5718 2.51579 9.49768C2.64628 7.42356 3.57878 5.48162 5.1159 4.08295C6.65302 2.68428 8.67409 1.93867 10.7513 2.00395C12.8285 2.06923 14.7988 2.94027 16.245 4.4327C17.458 5.68441 18.2225 7.29082 18.4376 9.00256C18.5065 9.55053 18.9477 10 19.5 10V10Z"
-                                fill="url(#paint0_angular_691_3776)"
-                              />
-                              <defs>
-                                <radialgradient
-                                  id="paint0_angular_691_3776"
-                                  cx="0"
-                                  cy="0"
-                                  r="1"
-                                  gradientUnits="userSpaceOnUse"
-                                  gradientTransform="translate(10.5 10) scale(9.16667)"
-                                >
-                                  <stop stop-color="white" />
-                                  <stop
-                                    offset="1"
-                                    stop-color="white"
-                                    stop-opacity="0"
-                                  />
-                                </radialgradient>
-                              </defs>
-                            </svg>
-                          </span>
-                        </div>
-                        <p>Shipping</p>
-                      </span>
-                      <span class="step">
-                        <div class="box">
-                          <span class="check">
-                            <svg
-                              width="20"
-                              height="14"
-                              viewBox="0 0 20 14"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M17.75 2L7.25 12.5L2 7.25"
-                                stroke="white"
-                                stroke-width="3"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                            </svg>
-                          </span>
-                          <span class="process">
-                            <svg
-                              width="21"
-                              height="20"
-                              viewBox="0 0 21 20"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M19.5 10C20.0523 10 20.5052 9.55114 20.4501 9.00162C20.2261 6.76925 19.2561 4.66593 17.6813 3.04087C15.8734 1.17534 13.4106 0.0865324 10.8141 0.00493439C8.21761 -0.0766636 5.69127 0.855354 3.76987 2.60369C1.84848 4.35202 0.682848 6.77945 0.519733 9.3721C0.356617 11.9647 1.20882 14.5191 2.89594 16.4945C4.58306 18.4698 6.97267 19.7111 9.55892 19.9556C12.1452 20.2001 14.725 19.4285 16.7524 17.8043C18.5185 16.3894 19.7445 14.4243 20.2465 12.2376C20.37 11.6993 19.977 11.1972 19.429 11.128V11.128C18.8811 11.0588 18.387 11.4494 18.25 11.9844C17.8221 13.6557 16.8623 15.1536 15.5019 16.2434C13.88 17.5428 11.8161 18.1601 9.74713 17.9645C7.67814 17.7689 5.76645 16.7759 4.41675 15.1956C3.06706 13.6153 2.38529 11.5718 2.51579 9.49768C2.64628 7.42356 3.57878 5.48162 5.1159 4.08295C6.65302 2.68428 8.67409 1.93867 10.7513 2.00395C12.8285 2.06923 14.7988 2.94027 16.245 4.4327C17.458 5.68441 18.2225 7.29082 18.4376 9.00256C18.5065 9.55053 18.9477 10 19.5 10V10Z"
-                                fill="url(#paint0_angular_691_3776)"
-                              />
-                              <defs>
-                                <radialgradient
-                                  id="paint0_angular_691_3776"
-                                  cx="0"
-                                  cy="0"
-                                  r="1"
-                                  gradientUnits="userSpaceOnUse"
-                                  gradientTransform="translate(10.5 10) scale(9.16667)"
-                                >
-                                  <stop stop-color="white" />
-                                  <stop
-                                    offset="1"
-                                    stop-color="white"
-                                    stop-opacity="0"
-                                  />
-                                </radialgradient>
-                              </defs>
-                            </svg>
-                          </span>
-                        </div>
-                        <p>Delivery</p>
-                      </span>
-                      <span class="step">
-                        <div class="box">
-                          <span class="check">
-                            <svg
-                              width="20"
-                              height="14"
-                              viewBox="0 0 20 14"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M17.75 2L7.25 12.5L2 7.25"
-                                stroke="white"
-                                stroke-width="3"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                            </svg>
-                          </span>
-                          <span class="process">
-                            <svg
-                              width="21"
-                              height="20"
-                              viewBox="0 0 21 20"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M19.5 10C20.0523 10 20.5052 9.55114 20.4501 9.00162C20.2261 6.76925 19.2561 4.66593 17.6813 3.04087C15.8734 1.17534 13.4106 0.0865324 10.8141 0.00493439C8.21761 -0.0766636 5.69127 0.855354 3.76987 2.60369C1.84848 4.35202 0.682848 6.77945 0.519733 9.3721C0.356617 11.9647 1.20882 14.5191 2.89594 16.4945C4.58306 18.4698 6.97267 19.7111 9.55892 19.9556C12.1452 20.2001 14.725 19.4285 16.7524 17.8043C18.5185 16.3894 19.7445 14.4243 20.2465 12.2376C20.37 11.6993 19.977 11.1972 19.429 11.128V11.128C18.8811 11.0588 18.387 11.4494 18.25 11.9844C17.8221 13.6557 16.8623 15.1536 15.5019 16.2434C13.88 17.5428 11.8161 18.1601 9.74713 17.9645C7.67814 17.7689 5.76645 16.7759 4.41675 15.1956C3.06706 13.6153 2.38529 11.5718 2.51579 9.49768C2.64628 7.42356 3.57878 5.48162 5.1159 4.08295C6.65302 2.68428 8.67409 1.93867 10.7513 2.00395C12.8285 2.06923 14.7988 2.94027 16.245 4.4327C17.458 5.68441 18.2225 7.29082 18.4376 9.00256C18.5065 9.55053 18.9477 10 19.5 10V10Z"
-                                fill="url(#paint0_angular_691_3776)"
-                              />
-                              <defs>
-                                <radialGradient
-                                  id="paint0_angular_691_3776"
-                                  cx="0"
-                                  cy="0"
-                                  r="1"
-                                  gradientUnits="userSpaceOnUse"
-                                  gradientTransform="translate(10.5 10) scale(9.16667)"
-                                >
-                                  <stop stop-color="white" />
-                                  <stop
-                                    offset="1"
-                                    stop-color="white"
-                                    stop-opacity="0"
-                                  />
-                                </radialGradient>
-                              </defs>
-                            </svg>
-                          </span>
-                        </div>
-                        <p>Payment</p>
-                      </span>
-                    </div>
-                    <!-- One "tab" for each step in the form: -->
-                    <div class="row">
-                      <div class="col-lg-8">
-                        <div class="tab">
-                          <div class="shipping_address cart-item">
-                            <div class="shipping_address_item">
-                              <div class="address_name">
-                                <input
-                                  type="radio"
-                                  name="home"
-                                  id="home"
-                                  checked
-                                />
-                                <label for="home">Home</label>
-                                <span class="default">Default</span>
-                              </div>
-                              <div class="address_info">
-                                <h4 class="user_name">Nathan C. Collette</h4>
-                                <p class="address">
-                                  4503 Villa DriveElkhart, IN 46516
-                                </p>
-                                <span>574-322-7161</span>
-                              </div>
-                              <div class="cta_btn">
-                                <button class="cta-remove">Remove</button>
-                                <button class="cta-edit">Edit</button>
-                              </div>
-                            </div>
-                            <div class="shipping_address_item">
-                              <div class="address_name">
-                                <input type="radio" name="work" id="work" />
-                                <label for="work">Work</label>
-                              </div>
-                              <div class="address_info">
-                                <h4 class="user_name">Nathan C. Collette</h4>
-                                <p class="address">
-                                  4503 Villa DriveElkhart, IN 46516
-                                </p>
-                                <span>574-322-7161</span>
-                              </div>
-                              <div class="cta_btn">
-                                <button class="cta-remove">Remove</button>
-                                <button class="cta-edit">Edit</button>
-                              </div>
-                            </div>
-                            <div class="cart-item-add-more">
-                              <a href="#">
-                                <span>
-                                  <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 20 20"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M1 10L19 10"
-                                      stroke="#E85342"
-                                      stroke-width="1.5"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    />
-                                    <path
-                                      d="M10 1L9.99931 19"
-                                      stroke="#E85342"
-                                      stroke-width="1.5"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    />
-                                  </svg>
-                                </span>
-                                Add New Address
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tab"></div>
-                        <div class="tab"></div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="cart_footer">
-                          <div class="promocode">
-                            <h4 class="pcode_header">Order Summary</h4>
-                            <div class="promoCodeFeild">
-                              <input
-                                class="couponText"
-                                type="text"
-                                placeholder="Coupen or gift"
-                              />
-                              <button class="promo_apply">Apply</button>
-                            </div>
-                          </div>
-                          <div class="subtotal">
-                            <p class="itemSubtotal">Item Subtotal</p>
-                            <span class="price">$3100.00</span>
-                          </div>
-                          <div class="subtotal">
-                            <p class="itemSubtotal">Taxs</p>
-                            <span class="price">$20.00</span>
-                          </div>
-                          <div class="subtotal">
-                            <p class="itemSubtotal">Estimated Total</p>
-                            <span class="price">$3249.00</span>
-                          </div>
-                        </div>
-                        <button class="shipping" onclick="nextPrev(1)">
-                          Delivery
-                        </button>
-                      </div>
-                    </div>
-
-                    <div style="overflow: auto">
-                      <div style="float: right">
-                        <button
-                          type="button"
-                          id="prevBtn"
-                          onclick="nextPrev(-1)"
-                        >
-                          Previous
-                        </button>
-                        <button
-                          type="button"
-                          id="nextBtn"
-                          onclick="nextPrev(1)"
-                        >
-                          Next
-                        </button>
-                      </div>
-                    </div>
-                  </form>
+                  <a
+                    href="./pages/checkOutProcess.html"
+                    class="shipping d-block"
+                    >Shipping</a
+                  >
                 </div>
               </div>
             </div>
@@ -1847,100 +1485,7 @@
     <script src="./assets/plugins/smooth-scroll/smooth-scroll.js"></script>
     <script src="./assets/plugins/slick/slick.min.js"></script>
     <script src="./assets/js/hamburger.js"></script>
+    <script src="./assets/js/custom.js"></script>
     <script src="./assets/js/main.js"></script>
-
-    <script>
-      // function openNav() {
-      //   document.getElementById("mySidenav").style.width = "100%";
-      //   document.getElementById("mySidenav").style.right = "0%";
-      // }
-
-      // function closeNav() {
-      //   document.getElementById("mySidenav").style.width = "0";
-      //   document.getElementById("mySidenav").style.right = "-100%";
-      // }
-    </script>
-
-    <!-- multi step form -->
-    <script>
-      var currentTab = 0; // Current tab is set to be the first tab (0)
-      showTab(currentTab); // Display the current tab
-
-      function showTab(n) {
-        // This function will display the specified tab of the form...
-        var x = document.getElementsByClassName("tab");
-        x[n].style.display = "block";
-        //... and fix the Previous/Next buttons:
-        if (n == 0) {
-          document.getElementById("prevBtn").style.display = "none";
-        } else {
-          document.getElementById("prevBtn").style.display = "inline";
-        }
-        if (n == x.length - 1) {
-          document.getElementById("nextBtn").innerHTML = "Submit";
-        } else {
-          document.getElementById("nextBtn").innerHTML = "Next";
-        }
-        //... and run a function that will display the correct step indicator:
-        fixStepIndicator(n);
-      }
-
-      function nextPrev(n) {
-        // This function will figure out which tab to display
-        var x = document.getElementsByClassName("tab");
-        // Exit the function if any field in the current tab is invalid:
-        if (n == 1 && !validateForm()) return false;
-        // Hide the current tab:
-        x[currentTab].style.display = "none";
-        // Increase or decrease the current tab by 1:
-        currentTab = currentTab + n;
-        // if you have reached the end of the form...
-        if (currentTab >= x.length) {
-          // ... the form gets submitted:
-          document.getElementById("regForm").submit();
-          return false;
-        }
-        // Otherwise, display the correct tab:
-        showTab(currentTab);
-      }
-
-      function validateForm() {
-        // This function deals with validation of the form fields
-        var x,
-          y,
-          i,
-          valid = true;
-        x = document.getElementsByClassName("tab");
-        y = x[currentTab].getElementsByTagName("input");
-        // A loop that checks every input field in the current tab:
-        for (i = 0; i < y.length; i++) {
-          // If a field is empty...
-          if (y[i].value == "") {
-            // add an "invalid" class to the field:
-            y[i].className += " invalid";
-            // and set the current valid status to false
-            valid = false;
-          }
-        }
-        // If the valid status is true, mark the step as finished and valid:
-        if (valid) {
-          document.getElementsByClassName("step")[currentTab].className +=
-            " finish";
-        }
-        return valid; // return the valid status
-      }
-
-      function fixStepIndicator(n) {
-        // This function removes the "active" class of all steps...
-        var i,
-          x = document.getElementsByClassName("step");
-        for (i = 0; i < x.length; i++) {
-          x[i].className = x[i].className.replace(" active", "");
-        }
-        //... and adds the "active" class on the current step:
-        x[n].className += " active";
-      }
-    </script>
-    <!-- multi step form -->
   </body>
 </html>

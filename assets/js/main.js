@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   // prelaoder
   //Maruf al Bashir Reza
   $(window).on("load", function () {
@@ -51,35 +52,6 @@ $(document).ready(function () {
 
   //  testimonial slider
 
-  // increment and decrement btn
-  var quantitiy = 0;
-  $(".quantity-right-plus").click(function (e) {
-    // Stop acting like a button
-    e.preventDefault();
-    // Get the field name
-    var quantity = parseInt($("#quantity").val());
-
-    // If is not undefined
-
-    $("#quantity").val(quantity + 1);
-
-    // Increment
-  });
-
-  $(".quantity-left-minus").click(function (e) {
-    // Stop acting like a button
-    e.preventDefault();
-    // Get the field name
-    var quantity = parseInt($("#quantity").val());
-
-    // If is not undefined
-
-    // Increment
-    if (quantity > 0) {
-      $("#quantity").val(quantity - 1);
-    }
-  });
-  // increment and decrement btn
 
   // cart sidebar section
   var replaceBtn = document.querySelector(".apply");
@@ -186,6 +158,13 @@ $(document).ready(function () {
     $(".track_my_order").addClass("d-none");
   });
 
+
+  // texture item selector
+  $(".product-texture-item").click(function(){
+    console.log('click');
+    $(this).addClass('active')
+  })
+
   const stars = document.querySelectorAll(".stars i");
   const starsNone = document.querySelector(".rating-box");
 
@@ -245,6 +224,11 @@ $(document).ready(function () {
     }
   });
   // sticky nav
+
+  
+
+
+
 });
 
 // js password show
@@ -257,4 +241,34 @@ function myFunction() {
   }
 }
 
-// preloader
+// increase & decrease btn
+$(function() {
+	$('[data-decrease]').click(decrease);
+	$('[data-increase]').click(increase);
+	$('[data-value]').change(valueChange);
+});
+
+function decrease() {
+	var value = $(this).parent().find('[data-value]').val();
+	if(value > 1) {
+		value--;
+		$(this).parent().find('[data-value]').val(value);
+	}
+}
+
+function increase() {
+	var value = $(this).parent().find('[data-value]').val();
+	if(value < 100) {
+		value++;
+		$(this).parent().find('[data-value]').val(value);
+	}
+}
+
+function valueChange() {
+	var value = $(this).val();
+	if(value == undefined || isNaN(value) == true || value <= 0) {
+		$(this).val(1);
+	} else if(value >= 101) {
+		$(this).val(100);
+	}
+}
