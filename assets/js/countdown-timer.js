@@ -167,12 +167,12 @@
   jQuery(document).ready(function() {
     jQuery("#countdown_dashboard").countDown({
       targetDate: {
-        day: 31,
-        month: 12,
-        year: 2023,
-        hour: 12,
-        min: 11,
-        sec: 11
+        day: 01,
+        month: 01,
+        year: 2024,
+        hour: 01,
+        min: 01,
+        sec: 1
       }
     });
   });

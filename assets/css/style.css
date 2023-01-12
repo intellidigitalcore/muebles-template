@@ -287,6 +287,57 @@ button:focus-visible {
 }
 /* scroll to top */
 
+/* wishlist heart animate */
+.ph-heart-fill {
+  -webkit-animation: wobble-hor-top 0.8s both;
+  animation: wobble-hor-top 0.8s both;
+}
+
+@-webkit-keyframes wobble-hor-top {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+  }
+  45% {
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+  }
+}
+
 /* common css */
 
 /* navbar */
@@ -881,30 +932,38 @@ button:focus-visible {
 .flash_sell .heading span i {
   color: #016a78;
 }
-.flash_sell .timing {
+
+.flash_sell .timing #countdown_dashboard {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
   margin-bottom: 40px;
 }
-.flash_sell .timing p {
+.flash_sell .timing #countdown_dashboard .dash {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.flash_sell .timing #countdown_dashboard .dash .digit-box {
+  display: flex;
+  align-items: center;
+}
+.flash_sell .timing #countdown_dashboard .dash .digit-box .digit {
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
   color: var(--flash-sell);
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 4px;
 }
-.flash_sell .timing p span {
+.flash_sell .timing #countdown_dashboard .dash .dash_title {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
   color: var(--Text);
   opacity: 0.6;
 }
+
+/* ---------------- */
 .flash_sell .image {
   background-color: var(--cart-bg);
   padding: 90px 45px;
@@ -3704,6 +3763,7 @@ button:focus-visible {
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
+  gap: 15px;
 }
 
 /* 4O4 */
