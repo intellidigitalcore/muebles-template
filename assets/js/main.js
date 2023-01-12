@@ -9,34 +9,6 @@ $(document).ready(function () {
   });
   // prelaoder
 
-  // mySidenav
-  $(".mySidenav").click("click", function () {
-    $(".sideBag").css({
-      width: "100%",
-      right: "0px",
-      transition: "all linear 0.5s"
-    });
-  });
-
-  $(".closebtn").click("click", function () {
-    $(".sideBag").css({
-      width: "-100%",
-      right: "0px",
-      transition: "all linear 0.5s"
-    });
-  });
-  // mySidenav
-
-  // filterSidenav
-  $(".filter").click("click", function () {
-    $("#filterSidenav").css({ width: "100%", right: "0px" });
-  });
-
-  $(".closebtn").click("click", function () {
-    $("#filterSidenav").css({ width: "-100%", right: "0px" });
-  });
-  // filterSidenav
-
   //  testimonial slider
   $(".categories_highlights_slider").slick({
     infinite: true,
