@@ -297,4 +297,10 @@ document.documentElement.scrollTop = 0;
 }
 
 
+// Window History Back
+function goBack() {
+  window.history.back()
+}
+
+
 
