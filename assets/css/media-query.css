@@ -99,6 +99,9 @@
   .hero .image {
     min-height: 400px;
   }
+  .hero .image img {
+    object-fit: cover;
+  }
   .hero .image .overlay h2 {
     font-size: 44px;
   }
@@ -106,6 +109,32 @@
     gap: 24px;
   }
   /* hero */
+
+  /* about page */
+  .about_page_hero {
+    margin: 24px auto;
+  }
+  .about_page_hero h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .about_page_hero p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .provide_best .provide_best_desc h4 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .provide_best .provide_best_desc h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .provide_best .provide_best_desc p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  /* about page */
 
   /* Categories Highlights */
   .categories_highlights .categories_highlights_slider .slick-dots {
@@ -412,35 +441,50 @@
 
   /* 404 */
   .notFound {
-    background-size: contain;
-    height: calc(100vh - 29rem);
+    height: calc(100vh - 13rem);
+  }
+  .notFound .img img {
+    width: calc(100% - 2rem);
+    object-fit: cover;
   }
   .notFound h2 {
-    font-size: 34px;
-    line-height: 49px;
+    font-size: 24px;
+    line-height: 36px;
   }
   .notFound p {
-    font-size: 18px;
-    line-height: 27px;
-    margin-bottom: 34px;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 64px;
   }
   /* 404 */
 
   /* comming soon */
   .comming_soon {
-    height: calc(100vh - -12rem);
+    height: calc(100vh - 0rem);
   }
   .comming_soon h2 {
     font-size: 22px;
     line-height: 28px;
+    text-align: center;
   }
   .comming_soon .dash {
     margin-left: 0px;
   }
+  .comming_soon .dash .digit {
+    font-size: 20px;
+    line-height: 25px;
+    min-width: auto;
+    padding: 4.89px 5.84px;
+  }
   .comming_soon #countdown_dashboard {
-    gap: 68px;
-    flex-wrap: wrap;
+    gap: 20px;
+    /* flex-wrap: wrap; */
     justify-content: center;
+  }
+  .comming_soon .dash_title {
+    font-size: 12px;
+    line-height: 18px;
+    bottom: -88%;
   }
   /* comming soon */
 
@@ -667,21 +711,23 @@
     width: auto;
   }
   .comming_soon #countdown_dashboard {
-    gap: 40px;
+    gap: 10px;
+    margin-bottom: 120px;
   }
 
   .comming_soon .dash .digit-box {
     justify-content: center;
   }
   .comming_soon .dash .digit {
-    font-size: 28px;
-    line-height: 45px;
-    min-width: 46px;
+    font-size: 20px;
+    line-height: 25px;
+    min-width: auto;
+    padding: 4.89px 5.84px;
   }
   .comming_soon .dash_title {
     font-size: 12px;
     line-height: 18px;
-    bottom: -70%;
+    bottom: -88%;
   }
   /* comming soon */
 }

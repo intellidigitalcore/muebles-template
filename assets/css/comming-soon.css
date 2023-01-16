@@ -73,7 +73,7 @@
   text-align: center;
   background: transparent;
   border: 0.5px solid rgba(56, 56, 62, 0.3);
-  backdrop-filter: blur(32.5px);
+  /* backdrop-filter: blur(32.5px); */
   border-radius: 5px;
 }
 /* comming soon */
