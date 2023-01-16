@@ -1,0 +1,84 @@
+/* flash sell */
+.flash_sell {
+  margin-bottom: 40px;
+}
+.flash_sell .heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--Text);
+}
+.flash_sell .heading span i {
+  color: #016a78;
+}
+/* count down design */
+.flash_sell .timing #countdown_dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+.flash_sell .timing #countdown_dashboard .dash {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.flash_sell .timing #countdown_dashboard .dash .digit-box {
+  display: flex;
+  align-items: center;
+}
+.flash_sell .timing #countdown_dashboard .dash .digit-box .digit {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--flash-sell);
+}
+.flash_sell .timing #countdown_dashboard .dash .dash_title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--Text);
+  opacity: 0.6;
+}
+
+/* count down design */
+.flash_sell .image {
+  background-color: var(--cart-bg);
+  padding: 90px 45px;
+  position: relative;
+}
+.flash_sell .image span {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+}
+.flash_sell .image span i {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--flash-sell);
+}
+.flash_sell .col-lg-3 h4 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--Text);
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.flash_sell .col-lg-3 p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--search-text);
+}
+.flash_sell .col-lg-3 .price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.flash_sell .col-lg-3 .price .update_price {
+  color: var(--Primary);
+}
+/* flash sell */

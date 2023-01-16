@@ -186,7 +186,7 @@ $(document).ready(function () {
   var btn = $("#top_navbar");
 
   $(window).scroll(function () {
-    if ($(window).scrollTop() > 300) {
+    if ($(window).scrollTop() > 10) {
       btn.addClass("sticky");
     } else {
       btn.removeClass("sticky");
