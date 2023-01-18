@@ -169,7 +169,18 @@ $(document).ready(function () {
     arrows: false,
     dots: false,
     centerMode: false,
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          vertical: false,
+        }
+      }
+    ]
+    
   });
   // product hero slider
 

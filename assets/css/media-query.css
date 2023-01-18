@@ -49,6 +49,10 @@
   #top_navbar .navbar {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
   }
+  #top_navbar .navbar .search input {
+    background-color: transparent;
+    border: 1px solid #77787c;
+  }
 
   .mob_nav .navbar-nav {
     flex-wrap: wrap;
@@ -359,6 +363,7 @@
   }
   .profile label {
     margin: 24px auto 0 !important;
+    line-height: 18px !important;
   }
 
   .profile h4 {
@@ -438,6 +443,92 @@
     padding: 4.5px 10px;
   }
   /* term and condition */
+  /* single product */
+  .product_hero .product_details .product_title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 124px;
+  }
+  .product_hero .product_details .product_price {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .product_hero .product_details .product_desc {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 24px 0px;
+  }
+  .product_hero .product_details .review {
+    flex-direction: column;
+    gap: 26px;
+    align-items: flex-start;
+    margin-bottom: 34px;
+  }
+  .product_hero .product_details .customize h4::after {
+    width: calc(100% - 0rem);
+  }
+  .product_hero .product_details .customize p {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .product_hero .product_details .customize .product-texture {
+    gap: 9px;
+  }
+  /* single product */
+  /* single product modal */
+  #staticBackdrop .modal-header button svg {
+    width: 24px;
+  }
+  /* single product */
+  /* customer review */
+  .customer_review {
+    border-top: 0px solid rgba(0, 0, 0, 0.2);
+  }
+  .customer_review .nav {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-bottom: 24px;
+    gap: 25px;
+  }
+  .customer_review .nav::-webkit-scrollbar {
+    display: none;
+  }
+  .customer_review .nav .nav-item {
+    white-space: nowrap;
+  }
+  .customer_review .nav .nav-link {
+    line-height: 25px;
+  }
+  .customer_review .tab-content .tab-pane .item h3 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .customer_review .tab-content .tab-pane .item p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .customer_review .customer_review_dimensions {
+    padding: 10px;
+  }
+  .customer_review .customer_review_dimensions h3 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .customer_review .customer_review_dimensions ul li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .customer_review .customer_review_dimensions ul li p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .customer_review .customer_review_dimensions ul li span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  /* customer review */
 
   /* 404 */
   .notFound {

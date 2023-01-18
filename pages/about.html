@@ -60,12 +60,12 @@
           <div
             class="row flex-row align-items-center justify-content-between w-100 mx-auto"
           >
-            <div class="col-lg-3 col-md-6 col-6 py-3">
+            <div class="col-lg-3 col-md-6 col-6 py-lg-3">
               <a class="navbar-brand me-auto" href="./../index.html">
                 <img src="./../assets/images/logo/logo.png" alt="" />
               </a>
             </div>
-            <div class="col-lg-6 col-md-6 col-6 py-3">
+            <div class="col-lg-6 col-md-6 col-6 py-lg-3">
               <div href="#" class="search desktop">
                 <input
                   class="w-100"
@@ -78,7 +78,16 @@
               <div
                 class="d-flex align-items-center justify-content-end w-100 gap-3"
               >
-                <div href="#" class="search mob_nav">
+                <div
+                  href="#"
+                  class="search mob_nav navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent1"
+                  aria-controls="navbarSupportedContent1"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
                   <i class="ph-magnifying-glass"></i>
                 </div>
                 <button
@@ -170,6 +179,16 @@
                       </a>
                     </li>
                   </ul>
+                </div>
+              </div>
+              <div class="mob_nav py-lg-3">
+                <div
+                  class="collapse navbar-collapse py-3 relative"
+                  id="navbarSupportedContent1"
+                >
+                  <div href="#" class="search">
+                    <input class="w-100" type="search" placeholder="Search" />
+                  </div>
                 </div>
               </div>
               <div class="desktop">
@@ -633,10 +652,20 @@
                   >
                 </li>
                 <li class="">
-                  <a href="#">
+                  <a
+                    class="filter border-0 bg-transparent"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBackdrop"
+                    aria-controls="offcanvasWithBackdrop"
+                  >
+                    <i class="ph-funnel"></i>
+                    Filter
+                  </a>
+                  <!-- <a href="#">
                     <i class="ph-funnel"></i>
                     Filter</a
-                  >
+                  > -->
                 </li>
                 <li class="">
                   <a class="" href="./widhlist.html">
@@ -645,10 +674,19 @@
                   >
                 </li>
                 <li class="">
-                  <a href="#">
-                    <i class="ph-handbag"></i>
-                    Cart</a
+                  <a
+                    class="nav-link border-0 bg-transparent"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
                   >
+                    <i class="ph-handbag"></i>
+                    Cart
+                  </a>
+                  <!-- <a href="./pages/view-cart.html">
+                    <i class="ph-handbag"></i>
+                  </a> -->
                 </li>
                 <li class="">
                   <a href="./profile.html">

@@ -60,12 +60,12 @@
           <div
             class="row flex-row align-items-center justify-content-between w-100 mx-auto"
           >
-            <div class="col-lg-3 col-md-6 col-6 py-3">
+            <div class="col-lg-3 col-md-6 col-6 py-lg-3">
               <a class="navbar-brand me-auto" href="./../index.html">
                 <img src="./../assets/images/logo/logo.png" alt="" />
               </a>
             </div>
-            <div class="col-lg-6 col-md-6 col-6 py-3">
+            <div class="col-lg-6 col-md-6 col-6 py-lg-3">
               <div href="#" class="search desktop">
                 <input
                   class="w-100"
@@ -78,7 +78,16 @@
               <div
                 class="d-flex align-items-center justify-content-end w-100 gap-3"
               >
-                <div href="#" class="search mob_nav">
+                <div
+                  href="#"
+                  class="search mob_nav navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent1"
+                  aria-controls="navbarSupportedContent1"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
                   <i class="ph-magnifying-glass"></i>
                 </div>
                 <button
@@ -172,6 +181,16 @@
                   </ul>
                 </div>
               </div>
+              <div class="mob_nav py-lg-3">
+                <div
+                  class="collapse navbar-collapse py-3 relative"
+                  id="navbarSupportedContent1"
+                >
+                  <div href="#" class="search">
+                    <input class="w-100" type="search" placeholder="Search" />
+                  </div>
+                </div>
+              </div>
               <div class="desktop">
                 <div
                   class="collapse navbar-collapse py-3 relative"
@@ -246,7 +265,7 @@
             </div>
             <div class="col-lg-7">
               <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-2 order-2 order-lg-1">
                   <div class="product_hero_slider_nav">
                     <div class="product_hero_slider_item">
                       <img
@@ -292,7 +311,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-10">
+                <div class="col-lg-10 order-1 order-lg-2">
                   <div class="product_hero_slider_for">
                     <div class="product_hero_slider_item">
                       <img
@@ -363,15 +382,17 @@
                 <div class="review">
                   <div class="points">
                     <ul class="star">
+                      <li><i class="ph-star-fill active"></i></li>
+                      <li><i class="ph-star-fill active"></i></li>
+                      <li><i class="ph-star-fill active"></i></li>
+                      <li><i class="ph-star-fill active"></i></li>
                       <li><i class="ph-star-fill"></i></li>
-                      <li><i class="ph-star-fill"></i></li>
-                      <li><i class="ph-star-fill"></i></li>
-                      <li><i class="ph-star-fill"></i></li>
-                      <li><i class="ph-star"></i></li>
                     </ul>
                     <p class="star-points">4.3</p>
                   </div>
-                  <span class="see-all-review">See all reviews</span>
+                  <span class="see-all-review"
+                    >See all reviews <i class="ph-arrow-right"></i
+                  ></span>
                 </div>
                 <div class="customize">
                   <h4>Customize</h4>
@@ -1302,28 +1323,40 @@
             <div class="col-lg-12">
               <ul class="mobile_sticky_nav">
                 <li class="">
-                  <a class="active" href="#">
+                  <a class="active" href="./../index.html">
                     <i class="ph-house"></i>
                     Home</a
                   >
                 </li>
                 <li class="">
-                  <a href="#">
-                    <i class="ph-funnel"></i>
-                    Filter</a
+                  <a
+                    class="filter border-0 bg-transparent"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBackdrop"
+                    aria-controls="offcanvasWithBackdrop"
                   >
+                    <i class="ph-funnel"></i>
+                    Filter
+                  </a>
                 </li>
                 <li class="">
-                  <a class="" href="#">
+                  <a class="" href="./widhlist.html">
                     <i class="ph-heart"></i>
                     Wishlist</a
                   >
                 </li>
                 <li class="">
-                  <a href="#">
-                    <i class="ph-handbag"></i>
-                    Cart</a
+                  <a
+                    class="nav-link border-0 bg-transparent"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
                   >
+                    <i class="ph-handbag"></i>
+                    Cart
+                  </a>
                 </li>
                 <li class="">
                   <a href="./profile.html">
@@ -1629,6 +1662,1000 @@
       </div>
     </div>
     <!-- bag canvas -->
+
+    <!-- filter canvas -->
+    <div
+      class="offcanvas offcanvas-start cart-bag"
+      tabindex="-1"
+      id="offcanvasWithBackdrop"
+      aria-labelledby="offcanvasWithBackdropLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Filter</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="cart_added">
+          <div class="filter_result_added">
+            <div class="filter_result_added_item">
+              Price: $250-$500
+              <span>
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.5999 2.3999L2.3999 9.5999"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9.5999 9.5999L2.3999 2.3999"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div class="filter_result_added_item">
+              Color: Black
+              <span>
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.5999 2.3999L2.3999 9.5999"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9.5999 9.5999L2.3999 2.3999"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div class="filter_result_added_item">
+              Availability: Ready to ship
+              <span>
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.5999 2.3999L2.3999 9.5999"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9.5999 9.5999L2.3999 2.3999"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div class="filter_result_added_item">
+              Material: Gloden wool
+              <span>
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.5999 2.3999L2.3999 9.5999"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9.5999 9.5999L2.3999 2.3999"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div class="filter_result_added_item">
+              Features: Sleeper
+              <span>
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.5999 2.3999L2.3999 9.5999"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9.5999 9.5999L2.3999 2.3999"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div class="filter_result_added_item">
+              Size: 36”-42”
+              <span>
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.5999 2.3999L2.3999 9.5999"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9.5999 9.5999L2.3999 2.3999"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="filter_result_clear">Clear All</div>
+          <div class="accordion" id="accordionExample">
+            <!-- Price -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Price
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+                style=""
+              >
+                <div class="accordion-body">
+                  <div class="refine-category">
+                    <ul class="custom-scrollbar">
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>Under $250</p>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>$250-$500</p>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>$500-$1000</p>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>$1000-$2000</p>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>Above $2000</p>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Color -->
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Color
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+                style=""
+              >
+                <div class="accordion-body">
+                  <div class="refine-category">
+                    <ul class="custom-scrollbar">
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>Black</p>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>Blue</p>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>Brown</p>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>Gray</p>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>Green</p>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>Pink</p>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>White</p>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Features -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Features
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+                style=""
+              >
+                <div class="accordion-body">
+                  <div class="refine-category">
+                    <ul class="custom-scrollbar">
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>Sleeper</p>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" checked="" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>Modular</p>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>Small Space</p>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>Deep Seated</p>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>Armless</p>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>Tufted</p>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>Concave</p>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Material -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  Material
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample"
+                style=""
+              >
+                <div class="accordion-body">
+                  <div class="refine-category">
+                    <ul id="list" class="product-texture">
+                      <li class="product-texture-item active">
+                        <img
+                          class="img-fluid"
+                          src="./../assets/images/texture/item1.png"
+                          alt=""
+                        />
+                      </li>
+                      <li class="product-texture-item">
+                        <img
+                          class="img-fluid"
+                          src="./../assets/images/texture/item2.png"
+                          alt=""
+                        />
+                      </li>
+                      <li class="product-texture-item">
+                        <img
+                          class="img-fluid"
+                          src="./../assets/images/texture/item3.png"
+                          alt=""
+                        />
+                      </li>
+                      <li class="product-texture-item">
+                        <img
+                          class="img-fluid"
+                          src="./../assets/images/texture/item4.png"
+                          alt=""
+                        />
+                      </li>
+                      <li class="product-texture-item">
+                        <img
+                          class="img-fluid"
+                          src="./../assets/images/texture/item5.png"
+                          alt=""
+                        />
+                      </li>
+                      <li class="product-texture-item">
+                        <img
+                          class="img-fluid"
+                          src="./../assets/images/texture/item6.png"
+                          alt=""
+                        />
+                      </li>
+                      <li class="product-texture-item">
+                        <img
+                          class="img-fluid"
+                          src="./../assets/images/texture/item7.png"
+                          alt=""
+                        />
+                      </li>
+                      <li class="product-texture-item">
+                        <img
+                          class="img-fluid"
+                          src="./../assets/images/texture/item8.png"
+                          alt=""
+                        />
+                      </li>
+                      <li class="product-texture-item">
+                        <img
+                          class="img-fluid"
+                          src="./../assets/images/texture/item9.png"
+                          alt=""
+                        />
+                      </li>
+                      <li class="product-texture-item">
+                        <img
+                          class="img-fluid"
+                          src="./../assets/images/texture/item10.png"
+                          alt=""
+                        />
+                      </li>
+                      <li class="product-texture-item">
+                        <img
+                          class="img-fluid"
+                          src="./../assets/images/texture/item11.png"
+                          alt=""
+                        />
+                      </li>
+                      <li class="product-texture-item">
+                        <img
+                          class="img-fluid"
+                          src="./../assets/images/texture/item12.png"
+                          alt=""
+                        />
+                      </li>
+                      <li class="product-texture-item">
+                        <img
+                          class="img-fluid"
+                          src="./../assets/images/texture/item13.png"
+                          alt=""
+                        />
+                      </li>
+                      <li class="product-texture-item">
+                        <img
+                          class="img-fluid"
+                          src="./../assets/images/texture/item14.png"
+                          alt=""
+                        />
+                      </li>
+                      <li class="product-texture-item">
+                        <img
+                          class="img-fluid"
+                          src="./../assets/images/texture/item15.png"
+                          alt=""
+                        />
+                      </li>
+                      <li class="product-texture-item">
+                        <img
+                          class="img-fluid"
+                          src="./../assets/images/texture/item16.png"
+                          alt=""
+                        />
+                      </li>
+                      <li class="product-texture-item">
+                        <img
+                          class="img-fluid"
+                          src="./../assets/images/texture/item17.png"
+                          alt=""
+                        />
+                      </li>
+                      <li class="product-texture-item">
+                        <img
+                          class="img-fluid"
+                          src="./../assets/images/texture/item18.png"
+                          alt=""
+                        />
+                      </li>
+                      <li class="product-texture-item">
+                        <img
+                          class="img-fluid"
+                          src="./../assets/images/texture/item19.png"
+                          alt=""
+                        />
+                      </li>
+                      <li class="product-texture-item">
+                        <img
+                          class="img-fluid"
+                          src="./../assets/images/texture/item20.png"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Size -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  Size
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample"
+                style=""
+              >
+                <div class="accordion-body">
+                  <div class="refine-category">
+                    <ul class="custom-scrollbar">
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>36" - 42"</p>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" checked="" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>43" - 48"</p>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>49" - 54"</p>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="check-container">
+                          <input type="checkbox" />
+                          <span class="checkmark">
+                            <svg
+                              width="10"
+                              height="7"
+                              viewBox="0 0 10 7"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <p>55" - 60"</p>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- filter canvas -->
 
     <!-- js -->
     <script
