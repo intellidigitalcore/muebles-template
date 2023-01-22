@@ -305,9 +305,9 @@
                     </div>
                   </div>
                   <div class="edit_shipping_address d-none">
-                    <form action="">
+                    <form action="#!">
                       <div class="row">
-                        <div class="col-6">
+                        <div class="col-lg-6 col-12">
                           <div class="mb-3">
                             <label for="firstName" class="form-label"
                               >First Name</label
@@ -320,7 +320,7 @@
                             />
                           </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-lg-6 col-12">
                           <div class="mb-3">
                             <label for="lastName" class="form-label"
                               >Last Name</label
@@ -333,7 +333,7 @@
                             />
                           </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-lg-3 col-12">
                           <div class="mb-3">
                             <label for="country" class="form-label"
                               >Country</label
@@ -346,7 +346,7 @@
                             />
                           </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-lg-3 col-12">
                           <div class="mb-3">
                             <label for="city" class="form-label">City</label>
                             <input
@@ -357,7 +357,7 @@
                             />
                           </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-lg-3 col-12">
                           <div class="mb-3">
                             <label for="provience" class="form-label"
                               >Provience</label
@@ -370,7 +370,7 @@
                             />
                           </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-lg-3 col-12">
                           <div class="mb-3">
                             <label for="zipCode" class="form-label"
                               >Zip Code</label
@@ -397,7 +397,7 @@
                           </div>
                         </div>
                         <div
-                          class="col-12 d-flex align-items-center justify-content-end gap-2"
+                          class="col-12 d-flex align-items-center justify-content-end gap-2 update-btn"
                         >
                           <button class="btn warning cancel-btn">Cancel</button>
                           <button class="btn success save-btn">Save</button>
@@ -453,13 +453,12 @@
                         <p>Oct 25- Oct 31</p>
                       </div>
                       <div class="address_name">
-                        <label class="container"
+                        <label
+                          for="myCheck"
+                          class="container check-date"
+                          onclick="myDateShow()"
                           >I’d like to pick my own date
-                          <input
-                            type="checkbox"
-                            id="myCheck"
-                            onclick="myFunction()"
-                          />
+                          <input type="checkbox" id="myCheck" />
                           <span class="checkmark"></span>
                         </label>
                         <div class="date">
@@ -642,9 +641,9 @@
                     </div>
                   </div>
                   <div class="edit_shipping_address edit_card_new d-none">
-                    <form action="">
+                    <form action="#!">
                       <div class="row">
-                        <div class="col-12">
+                        <div class="col-lg-12 col-12">
                           <div class="mb-3">
                             <label for="nameCard" class="form-label"
                               >Name On Card</label
@@ -657,7 +656,7 @@
                             />
                           </div>
                         </div>
-                        <div class="col-12">
+                        <div class="col-lg-12 col-12">
                           <div class="mb-3">
                             <label for="nameCard" class="form-label"
                               >Card Number</label
@@ -671,7 +670,7 @@
                           </div>
                         </div>
 
-                        <div class="col-6">
+                        <div class="col-lg-6 col-12">
                           <div class="mb-3">
                             <label for="mm/yy" class="form-label">MM/YY</label>
                             <input
@@ -682,7 +681,7 @@
                             />
                           </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-lg-6 col-12">
                           <div class="mb-3">
                             <label for="cvv" class="form-label">CVV</label>
                             <input
@@ -695,7 +694,7 @@
                         </div>
 
                         <div
-                          class="col-12 d-flex align-items-center justify-content-end gap-2"
+                          class="col-12 d-flex align-items-center justify-content-end gap-2 update-btn"
                         >
                           <button class="btn warning card-cancel-btn">
                             Cancel
@@ -745,7 +744,7 @@
                 </div>
               </div>
             </div>
-            <div class="tab">
+            <div class="tab last-step">
               <div class="row">
                 <div class="col-12 text-center">
                   <h3 class="">Your Payment is successfully complete</h3>

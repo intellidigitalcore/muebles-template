@@ -128,6 +128,8 @@ $(document).ready(function () {
     $(".track_my_order").addClass("d-none");
   });
 
+
+
   // texture item selector
   $(".product-texture-item").click(function () {
     $(this).toggleClass("active");
@@ -176,11 +178,10 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 6,
           slidesToScroll: 1,
-          vertical: false,
+          vertical: false
         }
       }
     ]
-    
   });
   // product hero slider
 
@@ -204,6 +205,19 @@ $(document).ready(function () {
   });
   // sticky nav
 });
+
+
+ // toggle date
+ function myDateShow() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+
 
 // js password show
 function myFunction() {
