@@ -547,6 +547,7 @@
   /* wishlist */
   .profile .wishlist {
     margin-bottom: 64px;
+    margin-top: 24px;
   }
 
   /* sign up */
@@ -712,9 +713,36 @@
     align-items: flex-start !important;
   }
   .profile .wishlist .desc .price_heart i {
+    display: none;
+  }
+  .profile .wishlist .wishlist_item {
+    position: relative;
+    padding: 16px;
+  }
+  .profile .wishlist .wishlist_item .heartClick.mob_nav {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 5%;
+    right: 5%;
+    font-size: 20px;
+    color: #016a78;
+  }
+  .profile .wishlist .desc h2 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .profile .wishlist .desc h4 {
+    margin-bottom: 8px;
+  }
+  .profile .wishlist .desc p {
+    margin-bottom: 24px;
+  }
+  .profile .wishlist .wishlist_review .review_product_btn {
+    justify-content: center;
+  }
+  .profile .wishlist .wishlist_review .review_product_btn .btn {
+    padding: 10px 10px;
+    line-height: 21px;
+    font-size: 14px;
   }
   /* profile */
 
