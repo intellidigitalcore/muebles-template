@@ -128,7 +128,11 @@ $(document).ready(function () {
     $(".track_my_order").addClass("d-none");
   });
 
+  // dropdown toggle btn
 
+  $(".dropbtn").on("click", function () {
+    $(this).toggleClass("show");
+  });
 
   // texture item selector
   $(".product-texture-item").click(function () {
@@ -206,18 +210,16 @@ $(document).ready(function () {
   // sticky nav
 });
 
-
- // toggle date
- function myDateShow() {
+// toggle date
+function myDateShow() {
   var checkBox = document.getElementById("myCheck");
   var text = document.getElementById("text");
-  if (checkBox.checked == true){
+  if (checkBox.checked == true) {
     text.style.display = "block";
   } else {
-     text.style.display = "none";
+    text.style.display = "none";
   }
 }
-
 
 // js password show
 function myFunction() {
@@ -290,3 +292,5 @@ function backToTop() {
 function goBack() {
   window.history.back();
 }
+
+

@@ -237,6 +237,10 @@
     padding-top: 4.5px;
     padding-bottom: 4.5px;
   }
+  .view_cart_modal .card-method .cart-item-add-more a {
+    justify-content: flex-end;
+    padding: 0;
+  }
   /* view cart page */
 
   /* checkout process */
@@ -554,12 +558,17 @@
     justify-content: center;
     margin: 40px auto;
   }
+  .profile .editFeild .profEditBtn {
+    margin-top: 24px;
+    justify-content: center;
+  }
   .signup form input {
     padding: 7.5px 16px;
   }
   /* sign up */
 
   /* profile */
+
   .profile .profile_nav {
     background-color: transparent;
     padding: 0px 0px 40px;
@@ -601,8 +610,8 @@
     width: max-content;
   }
   .profile p {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 14px !important;
+    line-height: 18px !important;
   }
   .profile label {
     margin: 24px auto 0 !important;
@@ -622,14 +631,7 @@
   .profile .payment_option .payment_method_card {
     flex-direction: column;
   }
-  .profile
-    .checkout_process_modal
-    .shipping_address
-    .shipping_address_item
-    .address_name {
-    flex-direction: column-reverse;
-    align-items: flex-start;
-  }
+
   .profile
     .payment_option
     .payment_method_card
@@ -650,7 +652,70 @@
   .profile .wishlist .wishlist_item > div {
     flex-direction: column;
   }
-
+  .profile .checkout_process_modal .edit_shipping_address label {
+    margin: 24px 0 4px 0 !important;
+  }
+  .profile .checkout_process_modal .edit_shipping_address .billing-btn .btn {
+    padding: 4.5px 24.5px;
+    margin-bottom: 0;
+    width: fit-content;
+  }
+  .profile .payment_option .payment_method_card .payment_method_card_item {
+    padding: 10px;
+  }
+  .profile .hh-grayBox {
+    padding: 0px;
+  }
+  .profile .track_my_order {
+    padding: 12px;
+  }
+  .profile .order_item {
+    gap: 0;
+  }
+  .profile .order_item .order_item_details {
+    padding: 6px 0px;
+  }
+  .profile .order_item .order_item_details h4 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .profile .order_item .order_item_details span {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .profile .order_item .order_item_details p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .profile .track_my_order .order_item {
+    align-items: flex-start;
+  }
+  .profile .track_my_order .order_item .img_order_number {
+    align-items: flex-start;
+  }
+  .profile .shiped_delivered_status span.desktop {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .profile .order_item .shiped_delivered_status h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .profile .track_my_order_with_number .order_item::after {
+    height: 0;
+  }
+  .profile .track_my_order .shiped_delivered_status {
+    flex-direction: column-reverse;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+  }
+  .profile .wishlist .desc .price_heart i {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
   /* profile */
 
   /* term and condition */

@@ -255,6 +255,91 @@
   .address_name {
   justify-content: space-between;
 }
+.profile
+  .payment_option
+  .payment_method_card
+  .payment_method_card_item
+  .address_name
+  span {
+  cursor: pointer;
+}
+.profile
+  .payment_option
+  .payment_method_card
+  .payment_method_card_item
+  .address_name
+  .dropbtn
+  #myDropdown {
+  top: 0;
+  right: 10%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: -20px 20px 40px -4px rgba(145, 158, 171, 0.24);
+  filter: drop-shadow(0px 0px 2px rgba(145, 158, 171, 0.24));
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  flex-direction: column;
+  max-width: 197px;
+  width: 100%;
+  padding: 10px 12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.profile
+  .payment_option
+  .payment_method_card
+  .payment_method_card_item
+  .address_name
+  .dropbtn.show
+  #myDropdown {
+  opacity: 1;
+  visibility: visible;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.profile
+  .payment_option
+  .payment_method_card
+  .payment_method_card_item
+  .address_name
+  #myDropdown
+  a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #222329;
+}
+.profile
+  .payment_option
+  .payment_method_card
+  .payment_method_card_item
+  .address_name
+  #myDropdown
+  a.cancel {
+  color: #cd6376;
+}
+.profile
+  .payment_option
+  .payment_method_card
+  .payment_method_card_item
+  .address_name {
+}
+.profile
+  .payment_option
+  .payment_method_card
+  .payment_method_card_item
+  .address_name {
+}
 .profile .payment_option .edit_card_new {
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2),
     0px 12px 24px -4px rgba(0, 0, 0, 0.12);
@@ -564,11 +649,19 @@
   color: #77787c;
   margin-bottom: 8px;
 }
+.profile .wishlist .desc .price_heart {
+  align-items: center;
+  justify-content: space-between;
+}
 .profile .wishlist .desc h2 {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: #016a78;
+}
+.profile .wishlist .desc .price_heart i {
+  font-size: 20px;
+  color: var(--Secondary);
 }
 .profile .wishlist .desc .give_review {
   font-weight: 600;
