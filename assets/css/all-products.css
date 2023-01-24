@@ -12,6 +12,16 @@
   gap: 24px;
   padding-bottom: 20px;
 }
+.all_product_hero .all-product-name::-webkit-scrollbar,
+.all_product_hero .all-product-name::-webkit-scrollbar-track,
+.all_product_hero .all-product-name::-webkit-scrollbar-thumb {
+  height: 8px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
 .all_product_hero .all-product-name li {
   border: 1px solid #e85342;
   border-radius: 8px;

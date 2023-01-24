@@ -203,9 +203,9 @@
 .cart-bag .cart_added .accordion .accordion-item ul li {
   margin-bottom: 11px;
 }
-.cart-bag .cart_added .accordion .accordion-item ul li:last-child {
+/* .cart-bag .cart_added .accordion .accordion-item ul li:last-child {
   margin-bottom: 0px;
-}
+} */
 .cart-bag .cart_added .accordion .accordion-item .product-texture {
   display: flex;
   align-items: center;

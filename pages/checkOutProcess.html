@@ -8,27 +8,27 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./../assets/images/icon/icon.png"
+      href="./../assets/images/logo/logo.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./../assets/images/icon/icon.png"
+      href="./../assets/images/logo/logo.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./../assets/images/icon/icon.png"
+      href="./../assets/images/logo/logo.png"
     />
-    <link rel="manifest" href="./../assets/images/icon/icon.png" />
+    <link rel="manifest" href="./manifest.json" />
     <link
       rel="mask-icon"
-      href="./../assets/images/icon/icon.png"
+      href="./../assets/images/logo/logo.png"
       color="#38bdf8"
     />
-    <link rel="shortcut icon" href="./../assets/images/icon/icon.png" />
+    <link rel="shortcut icon" href="./../assets/images/logo/logo.png" />
     <!-- favicon -->
     <title>Muebles</title>
     <!-- all css are included in style.css file -->
@@ -245,7 +245,14 @@
                   <div class="shipping_address cart-item d-block">
                     <div class="shipping_address_item">
                       <div class="address_name">
-                        <input type="radio" name="home" id="home" checked />
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="exampleRadios"
+                          id="home"
+                          value="option1"
+                          checked
+                        />
                         <label for="home">Home</label>
                         <span class="default">Default</span>
                       </div>
@@ -261,7 +268,13 @@
                     </div>
                     <div class="shipping_address_item">
                       <div class="address_name">
-                        <input type="radio" name="work" id="work" />
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="exampleRadios"
+                          id="work"
+                          value="option2"
+                        />
                         <label for="work">Work</label>
                       </div>
                       <div class="address_info">
@@ -548,7 +561,13 @@
                     <div class="shipping_address_item">
                       <div class="address_name payment">
                         <div>
-                          <input type="radio" name="paypal" id="paypal" />
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios"
+                            id="paypal"
+                            value="option1"
+                          />
                           <label for="paypal">Payment with paypal</label>
                         </div>
                         <span>
@@ -569,9 +588,11 @@
                       <div class="address_name payment">
                         <div>
                           <input
+                            class="form-check-input"
                             type="radio"
-                            name="credit_debit"
+                            name="exampleRadios"
                             id="credit_debit"
+                            value="option1"
                             checked
                           />
                           <label for="credit_debit">Credit / Debit Card</label>
@@ -626,11 +647,13 @@
                       <div class="address_name payment">
                         <div>
                           <input
+                            class="form-check-input"
                             type="radio"
-                            name="credit_debit"
-                            id="credit_debit"
+                            name="exampleRadios"
+                            id="cash_delivery"
+                            value="option1"
                           />
-                          <label for="credit_debit">Cash on delivery</label>
+                          <label for="cash_delivery">Cash on delivery</label>
                         </div>
                       </div>
                       <div class="address_info">

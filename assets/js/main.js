@@ -165,7 +165,8 @@ $(document).ready(function () {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: ".product_hero_slider_nav"
+    asNavFor: ".product_hero_slider_nav",
+    autoplay: true
   });
   $(".product_hero_slider_nav").slick({
     slidesToShow: 5,
@@ -201,7 +202,7 @@ $(document).ready(function () {
   var btn = $("#top_navbar");
 
   $(window).scroll(function () {
-    if ($(window).scrollTop() > 10) {
+    if ($(window).scrollTop() > 300) {
       btn.addClass("sticky");
     } else {
       btn.removeClass("sticky");
