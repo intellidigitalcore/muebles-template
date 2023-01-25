@@ -10,10 +10,12 @@
 }
 .product_hero .product_hero_slider_nav .product_hero_slider_item {
   cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 .product_hero .product_hero_slider_nav .product_hero_slider_item.slick-current {
   border: 1px solid #000000;
 }
+
 .product_hero .col-lg-10 {
   position: relative;
 }

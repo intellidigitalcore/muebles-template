@@ -175,14 +175,11 @@ $(document).ready(function () {
     asNavFor: ".product_hero_slider_for",
     arrows: false,
     dots: false,
-    centerMode: false,
     focusOnSelect: true,
     responsive: [
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 6,
-          slidesToScroll: 1,
           vertical: false
         }
       }
