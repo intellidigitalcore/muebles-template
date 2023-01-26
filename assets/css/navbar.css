@@ -41,7 +41,8 @@
 #top_navbar .navbar .col-lg-12 .desktop .navbar-nav .nav-item.active .nav-link {
   color: var(--Primary);
 }
-#top_navbar .navbar .col-lg-12 .desktop .navbar-nav .nav-item .nav-link:hover {
+#top_navbar .navbar .col-lg-12 .desktop .navbar-nav .nav-item .nav-link:hover,
+#top_navbar .navbar .col-lg-12 .desktop .navbar-nav .nav-item.active .nav-link {
   color: var(--Primary);
 }
 #top_navbar .navbar .col-lg-3 .mob_nav .navbar-nav {
