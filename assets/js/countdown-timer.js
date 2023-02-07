@@ -24,6 +24,7 @@
  */
 (function($) {
     $.fn.countDown = function(options) {
+      
       config = {};
   
       $.extend(config, options);

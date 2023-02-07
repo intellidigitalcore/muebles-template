@@ -1,6 +1,8 @@
 /* footer */
 .footer {
   background-color: var(--Text);
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .footer .col-lg-4 img {
   max-width: 120px;
