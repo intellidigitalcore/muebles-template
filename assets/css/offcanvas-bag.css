@@ -242,6 +242,10 @@
 .cart-bag .cart_footer .btn_part button:focus {
   box-shadow: none;
 }
+.cart-bag .cart_footer .btn_part .view_cart {
+  color: var(--Primary) !important;
+  border-color: var(--Primary) !important;
+}
 .cart-bag .cart_footer .btn_part .checkout {
   background-color: var(--Primary);
   color: var(--Background-Color);

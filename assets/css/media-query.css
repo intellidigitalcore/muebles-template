@@ -2,6 +2,7 @@
 @media (min-width: 1200px) and (max-width: 1650px) {
   .option_part .col {
     flex: 1 0 30%;
+    margin-bottom: 30px;
   }
   .option_part .number,
   .option_part .ttl_desc h3 {
